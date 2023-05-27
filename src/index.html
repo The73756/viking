@@ -5,9 +5,9 @@
     @@include('html/header.html', {})
 
     <main>
-        <img src="@img/frame.svg" class="body-frame body-frame--left">
-        <img src="@img/frame-2.svg" class="body-frame body-frame--right">
+        @@include('html/body-frame.html', {})
         @@include('html/hero.html', {})
+        @@include('html/about-festival.html', {})
     </main>
 
     @@include('html/footer.html', {})
