@@ -1,8 +1,29 @@
 @font-face {
-	font-family: Ubuntu;
+	font-family: RezakCYR;
 	font-display: swap;
-	src: url("../fonts/Ubuntu-Bold.woff2") format("woff2");
+	src: url("../fonts/RezakCYR-Bold.woff2") format("woff2");
 	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: RezakCYR;
+	font-display: swap;
+	src: url("../fonts/RezakCYR-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: RezakCYR;
+	font-display: swap;
+	src: url("../fonts/RezakCYR-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Runic;
+	font-display: swap;
+	src: url("../fonts/Runic.woff2") format("woff2");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
@@ -24,5 +45,12 @@
 	font-display: swap;
 	src: url("../fonts/Ubuntu-Regular.woff2") format("woff2");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Ubuntu;
+	font-display: swap;
+	src: url("../fonts/Ubuntu-Bold.woff2") format("woff2");
+	font-weight: 700;
 	font-style: normal;
 }
