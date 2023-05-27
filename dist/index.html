@@ -11,13 +11,59 @@
 
 <body>
     <header class="header">
-    <div class="container">
-        
-    </div>
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      <img src="img/logos/logo.svg" alt="Логотип" class="header__logo-img" />
+    </a>
+    <div class="header__nav-overlay" id="burger-overlay"></div>
+    <nav class="header__nav" id="nav-burger">
+      <div class="header__nav-top">
+        <img src="img/logos/logo-red.svg" alt="Логотип" class="header__nav-logo" />
+        <button class="btn header__nav-close" id="burger-btn-close">
+          <svg class="header__nav-close-icon">
+            <use xlink:href="img/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="list header__nav-list">
+        <li>
+          <a href="#">О фестивале</a>
+        </li>
+        <li>
+          <a href="#">Программа 2023</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="list header__social">
+        <li>
+          <a href="#" class="header__social-btn">
+            <svg class="header__social-btn-icon">
+              <use xlink:href="img/icons/icons.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header__social-btn">
+            <svg class="header__social-btn-icon">
+              <use xlink:href="img/icons/icons.svg#icon-tg"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn header__burger-btn" id="burger-btn">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </button>
+  </div>
 </header>
 
+
     <main>
-        wefewfew
+        
     </main>
 
     <footer class="footer">
@@ -25,5 +71,6 @@
         
     </div>
 </footer>
+    <script src="js/app.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,213 @@
+.header {
+  padding: 50px 0px;
+  @media (max-width: 1439px) {
+    padding: 35px 0px;
+  }
+  @media (max-width: 1365px) {
+    padding: 20px 0px;
+  }
+  @media (max-width: 576px) {
+    padding: 15px 0px;
+  }
+  &__container {
+    @include flex-between;
+  }
+  &__logo {
+    width: 212px;
+    @media (max-width: 1439px) {
+      width: 150px;
+    }
+    @media (max-width: 576px) {
+      width: 100px;
+    }
+  }
+  &__logo-img {
+    width: 100%;
+    height: auto;
+  }
+  &__nav-overlay {
+    display: none;
+    @media (max-width: 1365px) {
+      position: absolute;
+      display: block;
+      inset: 0;
+      background: rgba(49, 49, 48, 0.64);
+      transition: opacity 0.5s ease;
+      opacity: 0;
+      z-index: -1;
+      &.active {
+        opacity: 1;
+        z-index: 50;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    @media (max-width: 1365px) {
+      position: fixed;
+      overflow-y: auto;
+      display: block;
+      padding: 40px 35px 40px 50px;
+      background-color: var(--biege-light);
+      max-width: 540px;
+      width: 100%;
+      transform: translateX(540px);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      transition: transform 0.5s ease;
+      &.open {
+        transform: translateX(0);
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 18px 18px 18px 40px;
+      max-width: 320px;
+      transform: translateX(320px);
+    }
+  }
+  &__nav-top {
+    display: none;
+    @media (max-width: 1365px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+      align-items: center;
+    }
+  }
+  &__nav-logo {
+    width: 240px;
+    @media (max-width: 767px) {
+      width: 130px;
+    }
+  }
+  &__nav-close {
+    width: 30px;
+    height: 30px;
+    @media (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__nav-close-icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--red-middle);
+  }
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    a {
+      position: relative;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: var(--gray-light);
+      transition: color 0.2s ease;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 100%;
+        bottom: -8px;
+        height: 2px;
+        background-color: var(--red-middle);
+        transition: right 0.4s ease;
+      }
+      &.active {
+        color: var(--red-middle);
+        &::before {
+          right: 0;
+        }
+      }
+      @include hover {
+        color: var(--red-middle);
+        &::before {
+          right: 0;
+        }
+      }
+    }
+    @media (max-width: 1439px) {
+      column-gap: 35px;
+      a {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    @media (max-width: 1365px) {
+      display: block;
+      li {
+        margin-bottom: 80px;
+      }
+      a {
+        font-size: 30px;
+        line-height: 42px;
+        color: var(--brown-dark);
+        text-transform: none;
+      }
+    }
+    @media (max-width: 767px) {
+      li {
+        margin-bottom: 50px;
+      }
+      a {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    column-gap: 25px;
+  }
+  &__social-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    @include hover {
+      svg {
+        fill: var(--red-middle);
+      }
+    }
+    @media (max-width: 1439px) {
+      width: 22px;
+      height: 22px;
+    }
+    @media (max-width: 1365px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__social-btn-icon {
+    width: 100%;
+    height: 100%;
+    fill: #e7e7e7;
+    transition: fill 0.2s ease;
+    @media (max-width: 1365px) {
+      fill: var(--red-middle);
+    }
+  }
+  &__burger-btn {
+    display: none;
+    width: 60px;
+    @media (max-width: 1365px) {
+      display: block;
+    }
+  }
+  &__burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+}
