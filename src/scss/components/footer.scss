@@ -1,9 +1,12 @@
-@import "../base/templates";
-
 .footer {
-  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+  --webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
   background-color: var(--red-dark);
+
+  @include tablet {
+    --webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+  }
 
   &-top {
     padding-top: 160px;
@@ -15,7 +18,27 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+
+      @include laptop {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+      }
+    }
+
+    @include desktop {
+      padding-top: 114px;
+      padding-bottom: 97px;
+    }
+
+    @include laptop {
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+
+    @include tablet {
+      padding-top: 70px;
+      padding-bottom: 40px;
     }
   }
 
@@ -27,6 +50,17 @@
       font-weight: 500;
       font-size: 52px;
       line-height: 110%;
+
+      @include desktop {
+        font-size: 35px;
+        line-height: 110%;
+      }
+
+      @include laptop {
+        max-width: 500px;
+        font-size: 23px;
+        line-height: 140%;
+      }
     }
   }
 
@@ -35,11 +69,20 @@
       display: flex;
       gap: 24px;
       align-items: center;
+
+      @include desktop {
+        gap: 17px;
+      }
     }
 
     &__icon {
       width: 52px;
       height: 52px;
+
+      @include desktop {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &__link {
@@ -50,6 +93,16 @@
       @include hover {
         color: var(--biege-middle);
       }
+
+      @include desktop {
+        font-size: 23px;
+        line-height: 140%;
+      }
+
+      @include laptop {
+        font-size: 18px;
+        line-height: 140%;
+      }
     }
   }
 
@@ -57,7 +110,21 @@
     font-family: "Ubuntu", "sans-serif";
     background-image: url("../img/footer-line.png");
     background-repeat: no-repeat;
+    background-size: contain;
     padding-top: 108px;
+
+    @include desktop {
+      background-size: auto 34px;
+      padding-top: 74px;
+    }
+
+    @include laptop {
+      background-size: auto 24px;
+    }
+
+    @include tablet {
+      padding-top: 64px;
+    }
   }
 
   .footer-list {
@@ -71,6 +138,17 @@
       line-height: 150%;
       padding: 0;
       margin: 0 0 10px;
+
+      @include desktop {
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0 0 7px;
+      }
+
+      @include tablet {
+        font-size: 13px;
+        line-height: 150%;
+      }
     }
 
     &__content,
@@ -82,6 +160,16 @@
       font-style: normal;
       padding: 0;
       margin: 0;
+
+      @include desktop {
+        font-size: 14px;
+        line-height: 140%;
+      }
+
+      @include tablet {
+        font-size: 13px;
+        line-height: 140%;
+      }
     }
 
     &__link {
@@ -90,6 +178,19 @@
       @include hover {
         color: var(--biege-middle);
       }
+    }
+
+    &__item {
+      @include laptop {
+        max-width: 250px;
+        width: 100%;
+      }
+    }
+
+    @include laptop {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 25px;
     }
   }
 
@@ -106,6 +207,11 @@
       @include hover {
         fill: var(--biege-middle);
       }
+
+      @include desktop {
+        width: 23px;
+        height: 23px;
+      }
     }
   }
 
@@ -120,6 +226,29 @@
       padding-top: 110px;
       padding-bottom: 60px;
       position: relative;
+
+      @include desktop {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-size: 14px;
+        line-height: 150%;
+        gap: 16px;
+      }
+
+      @include laptop {
+        font-size: 12px;
+        line-height: 150%;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      @include tablet {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 11px;
+        line-height: 150%;
+        gap: 4px;
+      }
     }
 
     &__text {
@@ -132,6 +261,18 @@
       position: absolute;
       right: -38.5px;
       bottom: 0;
+
+      @include desktop {
+        width: 57px;
+        height: 130px;
+        right: -28.5px;
+      }
+
+      @include laptop {
+        width: 93px;
+        height: 212px;
+        right: 7px;
+      }
     }
   }
 }
