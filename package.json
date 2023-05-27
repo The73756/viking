@@ -38,6 +38,7 @@
     "gulp-webp-html-nosvg": "latest",
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
+    "prettier": "^2.8.8",
     "sass": "latest",
     "swiper": "latest",
     "vinyl-ftp": "latest",
