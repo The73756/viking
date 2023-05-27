@@ -20,5 +20,5 @@ img {
 body {
 	font-family: 'Ubuntu', sans-serif;
 	background-color: var(--bg);
-	background: url('../img/hero.jpg') 0 0 / cover no-repeat
+	z-index: 1;
 }

@@ -7,3 +7,34 @@
   outline: none;
   color: inherit;
 }
+
+.btn-primary {
+  font-family: "Rezak CYR", sans-serif;
+  padding: 26px 46px;
+  background-color: var(--red-middle);
+  border: 2px solid var(--red-middle);
+  font-weight: 500;
+  color: var(--light-gray);
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  @include hover {
+    color: var(--red-middle);
+    background-color: transparent;
+  }
+  @include desktop {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 17px 35px;
+  }
+  @include laptop {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  @include mobile {
+    padding: 17px 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

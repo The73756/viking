@@ -1,14 +1,20 @@
-@import './fonts';
-@import './base/normalize';
-@import './base/vars';
-@import './base/templates';
-@import './base/settings';
-@import './base/classes';
+@import "./fonts";
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/classes";
 
 // ui
 @import "./ui/button";
 @import "./ui/list";
+@import "./ui/title";
+
+// mini-components
+@import "./mini-components/body-frame";
 
 // components
 @import "./components/header";
+@import "./components/hero";
 @import "./components/footer";
