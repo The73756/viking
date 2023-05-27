@@ -1,6 +1,6 @@
 .header {
   padding: 50px 0px;
-  @media (max-width: 1439px) {
+  @media (max-width: 1539px) {
     padding: 35px 0px;
   }
   @media (max-width: 1365px) {
@@ -14,7 +14,7 @@
   }
   &__logo {
     width: 212px;
-    @media (max-width: 1439px) {
+    @media (max-width: 1539px) {
       width: 150px;
     }
     @media (max-width: 576px) {
@@ -134,7 +134,7 @@
         }
       }
     }
-    @media (max-width: 1439px) {
+    @media (max-width: 1539px) {
       column-gap: 35px;
       a {
         font-size: 14px;
@@ -176,7 +176,7 @@
         fill: var(--red-middle);
       }
     }
-    @media (max-width: 1439px) {
+    @media (max-width: 1539px) {
       width: 22px;
       height: 22px;
     }
