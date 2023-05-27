@@ -787,7 +787,6 @@ body {
   position: relative;
   padding: 210px 0px 210px 0px;
   min-height: 100vh;
-  background: url("../img/hero.jpg") 0 0/cover no-repeat;
   color: var(--bg);
   z-index: 1;
 }
