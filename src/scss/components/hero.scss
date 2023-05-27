@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  padding: 210px 0px 210px 0px;
+  min-height: 100vh;
+  color: var(--bg);
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(
+      303.58deg,
+      rgba(120, 115, 78, 0.15) -10.36%,
+      rgba(200, 46, 44, 0.15) 112.71%
+    );
+    z-index: -1;
+  }
+  @include desktop {
+    padding: 155px 0px;
+  }
+  @include laptop {
+    padding: 180px 0px 160px 0px;
+  }
+  @include mobile {
+    padding: 100px 0px 80px 0px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 91px;
+    line-height: 114px;
+    margin-bottom: 200px;
+    @include desktop {
+      font-size: 69px;
+      line-height: 86px;
+      margin-bottom: 155px;
+    }
+    @include laptop {
+      margin-bottom: 230px;
+    }
+    @include mobile {
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 250px;
+    }
+  }
+  &__footer {
+    @include flex-between;
+    @include laptop {
+      display: block;
+    }
+  }
+  &__info {
+    font-size: 52px;
+    line-height: 57px;
+    @include laptop {
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+  &__info-title {
+    font-size: 52px;
+    line-height: 57px;
+    margin-bottom: 20px;
+    @include desktop {
+      font-size: 35px;
+      line-height: 39px;
+      margin-bottom: 15px;
+    }
+    @include laptop {
+      font-size: 35px;
+      line-height: 39px;
+      margin-bottom: 12px;
+    }
+    @include mobile {
+      font-size: 23px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+  }
+  &__info-content {
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    @include desktop {
+      font-size: 23px;
+      line-height: 28px;
+    }
+    @include laptop {
+      font-size: 23px;
+      line-height: 28px;
+    }
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    @include desktop {
+      column-gap: 20px;
+    }
+    @include mobile {
+      column-gap: 30px;
+    }
+    @media (max-width: 419px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  &__btn-icon {
+    width: 64px;
+    height: 60px;
+    color: inherit;
+    fill: currentColor;
+    @include desktop {
+      width: 45px;
+      height: 42px;
+    }
+    @include mobile {
+      width: 37px;
+      height: 35px;
+    }
+  }
+  &__frame {
+    display: none;
+    @media (max-width: 992px) {
+      position: absolute;
+      display: block;
+      width: 100vw;
+      height: auto;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      z-index: 2;
+    }
+  }
+}
