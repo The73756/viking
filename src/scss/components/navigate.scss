@@ -74,6 +74,10 @@
     }
   }
 
+  &__btn {
+    display: inline-block;
+  }
+
   &__subtitle {
     padding: 0;
     color: var(--brown-dark);
@@ -107,10 +111,13 @@
       line-height: 140%;
     }
   }
-  &__image {
+  &__map {
+    width: 100%;
+    max-height: 515px;
+    max-width: 1312px;
+
     @include desktop {
       max-height: 420px;
-      object-fit: contain;
     }
 
     @include laptop {
@@ -120,7 +127,6 @@
     @include tablet {
       margin-bottom: 40px;
       width: 100%;
-      object-fit: cover;
     }
   }
 }
