@@ -14,7 +14,7 @@
   background-color: var(--red-middle);
   border: 2px solid var(--red-middle);
   font-weight: 500;
-  color: var(--light-gray);
+  color: var(--light-grey);
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
   transition: color var(--transition), background-color var(--transition);
 
   @include hover {
-    color: var(--gray-light);
+    color: var(--grey-light);
     background-color: var(--red-middle);
   }
 

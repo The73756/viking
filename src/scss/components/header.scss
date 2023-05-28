@@ -3,16 +3,16 @@
   left: 0;
   top: 0;
   right: 0;
-  padding: 50px 0px;
+  padding: 50px 0;
   z-index: 90;
   @media (max-width: 1539px) {
-    padding: 35px 0px;
+    padding: 35px 0;
   }
   @media (max-width: 1365px) {
-    padding: 20px 0px;
+    padding: 20px 0;
   }
   @media (max-width: 576px) {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
   &__container {
     @include flex-between;
@@ -116,7 +116,7 @@
       font-size: 20px;
       line-height: 23px;
       text-transform: uppercase;
-      color: var(--gray-light);
+      color: var(--grey-light);
       transition: color 0.2s ease;
       &::before {
         position: absolute;

@@ -1,27 +1,93 @@
 .bot {
   margin-top: 140px;
   margin-bottom: 140px;
+
+  @include desktop {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  @include laptop {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @include tablet {
+    margin-top: 70px;
+    margin-bottom: 51px;
+  }
+
   &__container {
     position: relative;
+
+    @include mobile {
+      overflow-x: hidden;
+    }
   }
 
   &__top {
     max-width: 940px;
+    margin-bottom: 60px;
+
+    @include desktop {
+      max-width: 700px;
+    }
+
+    @include laptop {
+      max-width: none;
+      margin-bottom: 40px;
+    }
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
   }
 
   &__title {
     margin-bottom: 24px;
+
+    @include desktop {
+      margin-bottom: 16px;
+    }
+
+    @include tablet {
+      margin-bottom: 12px;
+    }
   }
 
   &__desc {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     line-height: 140%;
     color: var(--brown-dark);
-    margin-bottom: 60px;
+
+    @include desktop {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 140%;
+      max-width: 238px;
+    }
   }
 
   &__right {
     max-width: 750px;
+
+    @include desktop {
+      max-width: 518px;
+    }
+
+    @include laptop {
+      max-width: 400px;
+    }
+
+    @include tablet {
+      max-width: 320px;
+    }
   }
 
   &__subtitle {
@@ -29,6 +95,18 @@
     line-height: 140%;
     margin-bottom: 30px;
     color: var(--brown-dark);
+
+    @include desktop {
+      font-size: 23px;
+      line-height: 140%;
+      margin-bottom: 16px;
+    }
+
+    @include tablet {
+      font-size: 15px;
+      line-height: 140%;
+      margin-bottom: 16px;
+    }
   }
 
   &__list {
@@ -36,6 +114,16 @@
     flex-direction: column;
     gap: 25px;
     margin-bottom: 95px;
+
+    @include desktop {
+      gap: 16px;
+      margin-bottom: 82px;
+    }
+
+    @include tablet {
+      gap: 13px;
+      margin-bottom: 40px;
+    }
   }
 
   &__item {
@@ -45,15 +133,90 @@
     font-size: 24px;
     line-height: 140%;
     color: var(--brown-dark);
+
+    @include desktop {
+      gap: 14px;
+    }
+
+    @include laptop {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    @include tablet {
+      gap: 12px;
+      font-size: 13px;
+      line-height: 140%;
+    }
+  }
+
+  &__icon {
+    fill: var(--red-middle);
+
+    @include desktop {
+      width: 15px;
+      height: 25px;
+    }
+
+    @include tablet {
+      width: 12px;
+      height: 20px;
+    }
   }
 
   &__btn {
     display: inline-block;
+
+    @include desktop {
+      padding: 16px 77px;
+    }
+
+    @include tablet {
+      padding: 16px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__image {
     position: absolute;
     top: 44px;
     right: 0;
+
+    @include desktop {
+      width: 520px;
+      height: 618px;
+      top: 0;
+    }
+
+    @include laptop {
+      width: auto;
+      height: 420px;
+      object-fit: contain;
+      right: 20px;
+      top: 125px;
+    }
+
+    @include tablet {
+      right: 20px;
+      top: 55px;
+    }
+
+    @include mobile {
+      top: 35px;
+      height: 350px;
+      right: 0;
+    }
+
+    @media (max-width: 428px) {
+      height: 277px;
+      right: -15px;
+    }
+
+    @include small-mobile {
+      right: -22%;
+    }
   }
 }
