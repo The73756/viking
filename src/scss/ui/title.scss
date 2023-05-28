@@ -3,3 +3,19 @@
   font-weight: 500;
   margin: 0;
 }
+
+.section-title {
+  font-size: 52px;
+  line-height: 110%;
+  color: var(--red-dark);
+
+  @include desktop {
+    font-size: 35px;
+    line-height: 110%;
+  }
+
+  @include tablet {
+    font-size: 23px;
+    line-height: 120%;
+  }
+}

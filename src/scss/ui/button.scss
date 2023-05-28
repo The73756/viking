@@ -38,3 +38,34 @@
     line-height: 24px;
   }
 }
+
+.btn-outline {
+  border: 2px solid var(--red-middle);
+  color: var(--red-middle);
+  font-family: "Rezak CYR", "sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  transition: color var(--transition), background-color var(--transition);
+
+  @include hover {
+    color: var(--gray-light);
+    background-color: var(--red-middle);
+  }
+
+  @include desktop {
+    font-size: 14px;
+    padding: 16px 40px;
+  }
+
+  @include tablet {
+    padding: 16px 35px;
+  }
+
+  @include small-mobile {
+    padding: 16px 0;
+    width: 100%;
+  }
+}
