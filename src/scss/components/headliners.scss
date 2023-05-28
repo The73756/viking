@@ -1,7 +1,9 @@
 .headliners {
+  position: relative;
   padding-bottom: 140px;
   overflow: hidden;
   clip-path: polygon(0 7%, 100% 1%, 100% 100%, 0% 100%);
+  z-index: 20;
   @include desktop {
     padding-bottom: 120px;
   }

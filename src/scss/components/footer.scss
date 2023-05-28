@@ -118,23 +118,35 @@
   }
 
   &-middle {
+    position: relative;
     font-family: "Ubuntu", "sans-serif";
-    background-image: url("../img/footer-line.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     padding-top: 108px;
-
     @include desktop {
-      background-size: auto 34px;
       padding-top: 74px;
     }
-
-    @include laptop {
-      background-size: auto 24px;
-    }
-
     @include tablet {
       padding-top: 64px;
+    }
+  }
+  &__frame {
+    position: absolute;
+    font-family: "Runic", sans-serif;
+    margin: 0;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    color: var(--biege-light);
+    z-index: 2;
+    @include desktop {
+      font-size: 28px;
+    }
+    @include laptop {
+      font-size: 20px;
     }
   }
 

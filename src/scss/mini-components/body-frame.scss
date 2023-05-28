@@ -1,33 +1,22 @@
 .body-frame {
-	position: absolute;
-	z-index: 2;
-	width: 144px;
-	height: auto;
-	&--left {
-		left: 85px;
-	}
-	&--right {
-		right: 85px;
-	}
-  @media (max-width: 1789px) {
-    &--left {
-      left: 50px;
-    }
-    &--right {
-      right: 50px;
-    }
+  position: absolute;
+  font-family: "Runic", sans-serif;
+  margin: 0;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--gray-light);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  z-index: 2;
+  opacity: 0.5;
+  &--left {
+    left: 85px;
   }
-  @media (max-width: 1749px) {
-    width: 90px;
-    &--left {
-      left: 15px;
-    }
-    &--right {
-      right: 15px;
-    }
+  &--right {
+    right: 85px;
   }
-  @include desktop {
-    width: 100px;
+  @media (max-width: 1779px) {
     &--left {
       left: 20px;
     }
@@ -35,8 +24,23 @@
       right: 20px;
     }
   }
-  @include laptop {
-    width: 90px;
+  @media (max-width: 1639px) {
+    font-size: 90px;
+    line-height: 120%;
+    &--left {
+      left: 10px;
+    }
+    &--right {
+      right: 10px;
+    }
+  }
+  @include desktop {
+    &--left {
+      left: 20px;
+    }
+    &--right {
+      right: 20px;
+    }
   }
   @media (max-width: 992px) {
     display: none;
