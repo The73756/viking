@@ -5,14 +5,22 @@
 
   // .program__title
   &__title {
+    margin-bottom: 60px;
   }
 
   // .program__list
   &__list {
+    display: flex;
+    gap: 102px;
+    margin-bottom: 140px;
   }
 
   // .program__item
   &__item {
+    font-family: "Rezak CYR", "sans-serif";
+    font-size: 31px;
+    line-height: 140%;
+    color: var(--brown-dark);
   }
 
   // .program__slider
@@ -21,37 +29,114 @@
 
   // .program__slide
   &__slide {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
   }
 
   // .program__left
   &__left {
+    --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
+    max-width: 803px;
+    background-color: var(--red-middle);
+    padding: 72px 117px 80px 111px;
+    height: 100%;
+  }
+
+  &__right {
+    position: relative;
   }
 
   // .program__prefix
   &__prefix {
+    display: block;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    color: var(--biege-light);
   }
 
   // .program__subtitle
   &__subtitle {
+    font-size: 69px;
+    line-height: 100%;
+    color: var(--bg);
+    margin-bottom: 35px;
   }
 
   // .program__date
   &__date {
+    font-family: "Rezak CYR", "sans-serif";
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 110%;
+    color: var(--bg);
+    margin-bottom: 40px;
   }
 
   // .program__text
   &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--bg);
+    max-width: 529px;
+    margin-bottom: 65px;
   }
 
   // .program__btn
   &__btn {
+    color: var(--bg);
+    border-color: var(--bg);
+
+    @include hover {
+      color: var(--red-middle);
+      background-color: var(--bg);
+    }
   }
 
   // .program__image
   &__image {
+    max-width: none;
+    display: block;
   }
 
   // .program__icon
   &__icon {
+    position: absolute;
+    top: 54.6%;
+    left: -60px;
+    transform: translateY(-50%);
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+  }
+
+  &__controls {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__control-btn {
+    color: var(--brown-dark);
+    transition: color var(--transition);
+
+    @include hover {
+      color: var(--red-middle);
+    }
+  }
+
+  &__arrow {
+    fill: currentColor;
+
+    &--next {
+      transform: rotate(180deg);
+    }
   }
 }

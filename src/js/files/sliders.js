@@ -1,9 +1,10 @@
 import Swiper from "swiper";
 import { Navigation } from "swiper";
-// import Swiper and modules styles
 
-// init Swiper:
 const swiper = new Swiper(".swiper", {
-  // configure Swiper to use modules
   modules: [Navigation],
+  navigation: {
+    nextEl: ".program__arrow--next",
+    prevEl: ".program__arrow--prev",
+  },
 });
