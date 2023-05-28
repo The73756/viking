@@ -104,14 +104,12 @@
   <div class="container program__container">
     <h2 class="program__title title section-title">Программа 2023 года</h2>
 
-    <div>
-      <ul class="program__list list">
-        <li class="program__item">Мастер-классы</li>
-        <li class="program__item">Развлечения</li>
-        <li class="program__item">Соревнования</li>
-        <li class="program__item">Для юных викингов</li>
-      </ul>
-    </div>
+    <ul class="program__list list">
+      <li class="program__item">Мастер-классы</li>
+      <li class="program__item">Развлечения</li>
+      <li class="program__item">Соревнования</li>
+      <li class="program__item">Для юных викингов</li>
+    </ul>
 
     <div class="swiper program__slider">
       <div class="swiper-wrapper">
@@ -131,7 +129,7 @@
 
             <button class="btn btn-outline program__btn">Купить билет</button>
           </div>
-          <div class="program__left">
+          <div class="program__right">
             <img
               src="./img/program/program-main.png"
               alt=""
@@ -143,6 +141,13 @@
               aria-hidden="true"
               class="program__icon" />
           </div>
+          <img
+            src="./img/program/program-line.png"
+            alt=""
+            aria-hidden="true"
+            width="100%"
+            height="32"
+            class="program__line" />
         </div>
         <div class="swiper-slide program__slide">
           <div class="program__left">
@@ -160,7 +165,7 @@
 
             <button class="btn btn-outline program__btn">Купить билет</button>
           </div>
-          <div class="program__left">
+          <div class="program__right">
             <img
               src="./img/program/program-main.png"
               alt=""
@@ -172,65 +177,26 @@
               aria-hidden="true"
               class="program__icon" />
           </div>
+          <img
+            src="./img/program/program-line.png"
+            alt=""
+            aria-hidden="true"
+            width="100%"
+            height="32"
+            class="program__line" />
         </div>
-        <div class="swiper-slide program__slide">
-          <div class="program__left">
-            <span class="program__prefix">Иммерсивное шоу</span>
-            <h3 class="title program__subtitle">Скандинавское погружение</h3>
-            <p class="program__date">
-              <time datetime="2023-08-27">27</time>-<time datetime="2023-08-28">28</time> августа
-            </p>
-
-            <p class="program__text">
-              Станьте главным героем саги о викингах. Вы сможете примерить на себя любую из ролей,
-              путь выбираете вы сами. Незабываемые ощущения и новые друзья — то, чем окончится ваша
-              история «Скандинавского погружения»!
-            </p>
-
-            <button class="btn btn-outline program__btn">Купить билет</button>
-          </div>
-          <div class="program__left">
-            <img
-              src="./img/program/program-main.png"
-              alt=""
-              aria-hidden="true"
-              class="program__image" />
-            <img
-              src="./img/program/program-second.png"
-              alt=""
-              aria-hidden="true"
-              class="program__icon" />
-          </div>
-        </div>
-        <div class="swiper-slide program__slide">
-          <div class="program__left">
-            <span class="program__prefix">Иммерсивное шоу</span>
-            <h3 class="title program__subtitle">Скандинавское погружение</h3>
-            <p class="program__date">
-              <time datetime="2023-08-27">27</time>-<time datetime="2023-08-28">28</time> августа
-            </p>
-
-            <p class="program__text">
-              Станьте главным героем саги о викингах. Вы сможете примерить на себя любую из ролей,
-              путь выбираете вы сами. Незабываемые ощущения и новые друзья — то, чем окончится ваша
-              история «Скандинавского погружения»!
-            </p>
-
-            <button class="btn btn-outline program__btn">Купить билет</button>
-          </div>
-          <div class="program__left">
-            <img
-              src="./img/program/program-main.png"
-              alt=""
-              aria-hidden="true"
-              class="program__image" />
-            <img
-              src="./img/program/program-second.png"
-              alt=""
-              aria-hidden="true"
-              class="program__icon" />
-          </div>
-        </div>
+      </div>
+      <div class="program__controls">
+        <button class="program__control-btn btn">
+          <svg class="program__arrow program__arrow--prev" width="80" height="32">
+            <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <button class="program__control-btn btn">
+          <svg class="program__arrow program__arrow--next" width="80" height="32">
+            <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
