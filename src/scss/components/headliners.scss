@@ -1,0 +1,15 @@
+.headliners {
+  padding-bottom: 140px;
+  overflow: hidden;
+  &__slider {
+    overflow: visible;
+  }
+  &__slide {
+    width: auto;
+  }
+  &__slide-img {
+    width: 640px;
+    height: 480px;
+    object-fit: cover;
+  }
+}
