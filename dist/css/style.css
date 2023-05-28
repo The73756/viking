@@ -3085,19 +3085,19 @@ body {
   }
 }
 .media-about__item {
-  max-width: calc(33.3333333333% - 32px);
+  max-width: calc(33.3333333333% - 50px);
   width: 100%;
-  display: flex;
-  gap: 18px;
+  position: relative;
+  padding-left: 50px;
 }
 @media (max-width: 1539px) {
   .media-about__item {
-    gap: 12px;
+    padding-left: 38px;
   }
 }
 @media (max-width: 1365px) {
   .media-about__item {
-    max-width: calc(50% - 32px);
+    max-width: calc(50% - 38px);
   }
   .media-about__item:last-child {
     display: none;
@@ -3106,13 +3106,19 @@ body {
 @media (max-width: 767px) {
   .media-about__item {
     max-width: none;
+    padding-left: 28px;
   }
   .media-about__item:not(:nth-child(-n+4)) {
     display: none;
   }
 }
 .media-about__icon {
+  width: 32px;
+  height: 32px;
   fill: var(--red-light);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 @media (max-width: 1539px) {
   .media-about__icon {
