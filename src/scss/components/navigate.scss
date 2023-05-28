@@ -74,6 +74,10 @@
     }
   }
 
+  &__btn {
+    display: inline-block;
+  }
+
   &__subtitle {
     padding: 0;
     color: var(--brown-dark);
