@@ -18,14 +18,9 @@
   }
 
   &__title {
-    font-size: 52px;
-    line-height: 110%;
-    color: var(--red-dark);
     margin-bottom: 54px;
 
     @include desktop {
-      font-size: 35px;
-      line-height: 110%;
       margin-bottom: 40px;
     }
 
@@ -34,8 +29,6 @@
     }
 
     @include tablet {
-      font-size: 23px;
-      line-height: 120%;
       margin-bottom: 16px;
     }
   }

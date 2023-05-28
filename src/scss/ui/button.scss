@@ -14,7 +14,7 @@
   background-color: var(--red-middle);
   border: 2px solid var(--red-middle);
   font-weight: 500;
-  color: var(--light-gray);
+  color: var(--light-grey);
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
@@ -36,5 +36,36 @@
     padding: 17px 40px;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+.btn-outline {
+  border: 2px solid var(--red-middle);
+  color: var(--red-middle);
+  font-family: "Rezak CYR", "sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  transition: color var(--transition), background-color var(--transition);
+
+  @include hover {
+    color: var(--grey-light);
+    background-color: var(--red-middle);
+  }
+
+  @include desktop {
+    font-size: 14px;
+    padding: 16px 40px;
+  }
+
+  @include tablet {
+    padding: 16px 35px;
+  }
+
+  @include small-mobile {
+    padding: 16px 0;
+    width: 100%;
   }
 }

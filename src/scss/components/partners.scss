@@ -12,24 +12,14 @@
   }
 
   &__title {
-    font-size: 52px;
-    line-height: 110%;
     margin-bottom: 60px;
-    color: var(--red-dark);
 
     @include desktop {
-      font-size: 35px;
-      line-height: 110%;
       margin-bottom: 57px;
     }
 
     @include laptop {
       margin-bottom: 25px;
-    }
-
-    @include tablet {
-      font-size: 23px;
-      line-height: 120%;
     }
   }
 
