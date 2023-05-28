@@ -2276,6 +2276,9 @@ body {
     margin-bottom: 25px;
   }
 }
+.navigate__btn {
+  display: inline-block;
+}
 .navigate__subtitle {
   padding: 0;
   color: var(--brown-dark);
