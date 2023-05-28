@@ -1128,10 +1128,22 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
+  margin-bottom: 180px;
+}
+@media (max-width: 1539px) {
+  .own-element__body {
+    margin-bottom: 130px;
+  }
+}
+@media (max-width: 1365px) {
+  .own-element__body {
+    margin-bottom: 80px;
+  }
 }
 @media (max-width: 767px) {
   .own-element__body {
     gap: 15px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 639px) {
@@ -1300,5 +1312,101 @@ body {
   .own-element__descr {
     font-size: 13px;
     line-height: 18px;
+  }
+}
+.own-element__offer {
+  position: relative;
+}
+.own-element__offer-title {
+  max-width: 640px;
+  font-size: 52px;
+  line-height: 57px;
+  text-align: center;
+  color: var(--red-middle);
+  margin: 0px auto 35px auto;
+}
+@media (max-width: 1539px) {
+  .own-element__offer-title {
+    max-width: 400px;
+    font-size: 35px;
+    line-height: 39px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1365px) {
+  .own-element__offer-title {
+    max-width: none;
+  }
+}
+.own-element__offer-content {
+  font-family: "Rezak CYR", sans-serif;
+  font-weight: 500;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 31px;
+  line-height: 43px;
+  text-align: center;
+  color: var(--brown-dark);
+}
+@media (max-width: 1539px) {
+  .own-element__offer-content {
+    max-width: 520px;
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 1365px) {
+  .own-element__offer-content {
+    max-width: 510px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .own-element__offer-content {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 1365px) {
+  .own-element__images {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.own-element__offer-viking {
+  position: absolute;
+  height: auto;
+}
+.own-element__offer-viking--pitchfork {
+  left: -40px;
+  bottom: -30px;
+}
+.own-element__offer-viking--beer {
+  bottom: -25px;
+  right: -60px;
+}
+@media (max-width: 1539px) {
+  .own-element__offer-viking--pitchfork {
+    width: 242px;
+    bottom: -55px;
+    left: 0;
+  }
+  .own-element__offer-viking--beer {
+    width: 280px;
+    right: 0;
+    bottom: -55px;
+  }
+}
+@media (max-width: 1365px) {
+  .own-element__offer-viking {
+    position: static;
+  }
+}
+@media (max-width: 576px) {
+  .own-element__offer-viking--pitchfork {
+    width: 140px;
+  }
+  .own-element__offer-viking--beer {
+    width: 160px;
   }
 }
