@@ -1086,8 +1086,8 @@ template {
   --green: #517254;
   --green-dirt: #78734e;
   --neutral-dark: #2b2523;
-  --grey-light: #ece9e7;
-  --grey-dark: #7d7672;
+  --gray-light: #ece9e7;
+  --gray-dark: #7d7672;
   --brown-light: #998468;
   --brown-dark: #6e443a;
   --biege-light: #f2e7dc;
@@ -1275,9 +1275,16 @@ body {
 
 .body-frame {
   position: absolute;
+  font-family: "Runic", sans-serif;
+  margin: 0;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--gray-light);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
   z-index: 2;
-  width: 144px;
-  height: auto;
+  opacity: 0.5;
 }
 .body-frame--left {
   left: 85px;
@@ -1285,29 +1292,7 @@ body {
 .body-frame--right {
   right: 85px;
 }
-@media (max-width: 1789px) {
-  .body-frame--left {
-    left: 50px;
-  }
-  .body-frame--right {
-    right: 50px;
-  }
-}
-@media (max-width: 1749px) {
-  .body-frame {
-    width: 90px;
-  }
-  .body-frame--left {
-    left: 15px;
-  }
-  .body-frame--right {
-    right: 15px;
-  }
-}
-@media (max-width: 1539px) {
-  .body-frame {
-    width: 100px;
-  }
+@media (max-width: 1779px) {
   .body-frame--left {
     left: 20px;
   }
@@ -1315,14 +1300,24 @@ body {
     right: 20px;
   }
 }
-@media (max-width: 1365px) {
+@media (max-width: 1639px) {
   .body-frame {
-    width: 90px;
+    font-size: 90px;
+    line-height: 120%;
+  }
+  .body-frame--left {
+    left: 10px;
+  }
+  .body-frame--right {
+    right: 10px;
   }
 }
-@media (max-width: 992px) {
-  .body-frame {
-    display: none;
+@media (max-width: 1539px) {
+  .body-frame--left {
+    left: 20px;
+  }
+  .body-frame--right {
+    right: 20px;
   }
 }
 
