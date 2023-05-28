@@ -1,4 +1,5 @@
 .footer {
+  overflow: hidden;
   --webkit-clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
   background-color: var(--red-dark);
@@ -270,7 +271,7 @@
     &__img {
       position: absolute;
       right: -38.5px;
-      bottom: 0;
+      bottom: -2px;
 
       @include desktop {
         width: 57px;
