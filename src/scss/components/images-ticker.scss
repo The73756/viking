@@ -1,0 +1,85 @@
+.images-ticker {
+  margin-top: 140px;
+  margin-bottom: 140px;
+
+  @include desktop {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  @include laptop {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  @include tablet {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  &__container {
+    overflow: hidden;
+    --webkit-clip-path: polygon(0 0, 100% 74px, 100% 100%, 0% calc(100% - 74px));
+    clip-path: polygon(0 0, 100% 74px, 100% 100%, 0% calc(100% - 74px));
+
+    @include desktop {
+      --webkit-clip-path: polygon(0 0, 100% 51px, 100% 100%, 0% calc(100% - 51px));
+      clip-path: polygon(0 0, 100% 51px, 100% 100%, 0% calc(100% - 51px));
+    }
+
+    @include laptop {
+      --webkit-clip-path: polygon(0 0, 100% 29px, 100% 100%, 0% calc(100% - 29px));
+      clip-path: polygon(0 0, 100% 29px, 100% 100%, 0% calc(100% - 29px));
+    }
+
+    @include tablet {
+      --webkit-clip-path: none;
+      clip-path: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    animation: ticker-kf 18s linear infinite;
+  }
+
+  &__image {
+    max-width: none;
+    object-fit: contain;
+
+    @include desktop {
+      width: 454px;
+      height: 340px;
+    }
+
+    @include laptop {
+      width: 320px;
+      height: 240px;
+    }
+
+    @include tablet {
+      width: 200px;
+      height: 160px;
+    }
+  }
+}
+
+@keyframes tinker {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}

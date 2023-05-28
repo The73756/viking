@@ -40,10 +40,13 @@
     "gulp-zip": "latest",
     "prettier": "^2.8.8",
     "sass": "latest",
-    "swiper": "latest",
+    "swiper": "^9.3.2",
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack": "latest",
     "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "vanilla-marquee": "^1.1.2"
   }
 }

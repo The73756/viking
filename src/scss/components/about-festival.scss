@@ -15,7 +15,7 @@
     padding: 140px 112px 120px 112px;
     background-color: var(--red-middle);
     transform: translateY(-70px);
-    -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+    --webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
     z-index: 10;
     @include desktop {
