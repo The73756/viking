@@ -430,6 +430,17 @@ body {
   touch-action: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
 .btn {
   cursor: pointer;
   background-color: transparent;
@@ -1065,7 +1076,7 @@ body {
   padding: 140px 112px 120px 112px;
   background-color: var(--red-middle);
   transform: translateY(-70px);
-  -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+  --webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
   z-index: 10;
 }
@@ -1133,6 +1144,94 @@ body {
   }
 }
 
+.images-ticker {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+@media (max-width: 1539px) {
+  .images-ticker {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 1365px) {
+  .images-ticker {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .images-ticker {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+.images-ticker__container {
+  overflow: hidden;
+  --webkit-clip-path: polygon(0 0, 100% 74px, 100% 100%, 0% calc(100% - 74px));
+  clip-path: polygon(0 0, 100% 74px, 100% 100%, 0% calc(100% - 74px));
+}
+@media (max-width: 1539px) {
+  .images-ticker__container {
+    --webkit-clip-path: polygon(0 0, 100% 51px, 100% 100%, 0% calc(100% - 51px));
+    clip-path: polygon(0 0, 100% 51px, 100% 100%, 0% calc(100% - 51px));
+  }
+}
+@media (max-width: 1365px) {
+  .images-ticker__container {
+    --webkit-clip-path: polygon(0 0, 100% 29px, 100% 100%, 0% calc(100% - 29px));
+    clip-path: polygon(0 0, 100% 29px, 100% 100%, 0% calc(100% - 29px));
+  }
+}
+@media (max-width: 767px) {
+  .images-ticker__container {
+    --webkit-clip-path: none;
+    clip-path: none;
+  }
+}
+.images-ticker__list {
+  display: flex;
+  animation: ticker-kf 18s linear infinite;
+}
+.images-ticker__image {
+  max-width: none;
+  object-fit: contain;
+}
+@media (max-width: 1539px) {
+  .images-ticker__image {
+    width: 454px;
+    height: 340px;
+  }
+}
+@media (max-width: 1365px) {
+  .images-ticker__image {
+    width: 320px;
+    height: 240px;
+  }
+}
+@media (max-width: 767px) {
+  .images-ticker__image {
+    width: 200px;
+    height: 160px;
+  }
+}
+
+@keyframes tinker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}
 .bot {
   margin-top: 140px;
   margin-bottom: 140px;
