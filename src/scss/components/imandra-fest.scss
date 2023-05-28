@@ -1,0 +1,103 @@
+.imandra-fest {
+  margin-top: 140px;
+  margin-bottom: 140px;
+
+  @include desktop {
+    margin-bottom: 120px;
+    margin-top: 120px;
+  }
+
+  @include laptop {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @include tablet {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    font-size: 52px;
+    line-height: 110%;
+    color: var(--red-dark);
+    margin-bottom: 54px;
+
+    @include desktop {
+      font-size: 35px;
+      line-height: 110%;
+      margin-bottom: 40px;
+    }
+
+    @include laptop {
+      margin-bottom: 23px;
+    }
+
+    @include tablet {
+      font-size: 23px;
+      line-height: 120%;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    @include desktop {
+      gap: 60px;
+    }
+
+    @include laptop {
+      gap: 24px;
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 25px;
+    }
+  }
+
+  &__image {
+    @include desktop {
+      width: 216px;
+      height: 110px;
+    }
+
+    @include tablet {
+      width: 235px;
+      height: 120px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", "sans-serif";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 784px;
+    color: var(--brown-dark);
+
+    @include desktop {
+      font-size: 18px;
+      line-height: 140%;
+      max-width: 612px;
+    }
+
+    @include laptop {
+      font-size: 14px;
+      line-height: 150%;
+      max-width: 450px;
+    }
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 140%;
+      max-width: none;
+    }
+  }
+}

@@ -1,11 +1,21 @@
 .footer {
-  --webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+  --webkit-clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
   background-color: var(--red-dark);
 
-  @include tablet {
-    --webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+  @include desktop {
+    --webkit-clip-path: polygon(0 0, 100% 53px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 53px, 100% 100%, 0 100%);
+  }
+
+  @include laptop {
+    --webkit-clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 100%);
+  }
+
+  @include mobile {
+    --webkit-clip-path: polygon(0 0, 100% 13px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 13px, 100% 100%, 0 100%);
   }
 
   &-top {
