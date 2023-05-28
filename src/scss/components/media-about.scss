@@ -40,17 +40,17 @@
   }
 
   &__item {
-    max-width: calc((100% / 3) - 32px);
+    max-width: calc((100% / 3) - 50px);
     width: 100%;
-    display: flex;
-    gap: 18px;
+    position: relative;
+    padding-left: 50px;
 
     @include desktop {
-      gap: 12px;
+      padding-left: 38px;
     }
 
     @include laptop {
-      max-width: calc((100% / 2) - 32px);
+      max-width: calc((100% / 2) - 38px);
 
       &:last-child {
         display: none;
@@ -59,6 +59,7 @@
 
     @include tablet {
       max-width: none;
+      padding-left: 28px;
       &:not(:nth-child(-n + 4)) {
         display: none;
       }
@@ -66,7 +67,12 @@
   }
 
   &__icon {
+    width: 32px;
+    height: 32px;
     fill: var(--red-light);
+    position: absolute;
+    left: 0;
+    top: 0;
 
     @include desktop {
       width: 26px;
