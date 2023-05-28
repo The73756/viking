@@ -19,6 +19,6 @@ const sliderHeadliners = new Swiper(".headliners__slider", {
   allowTouchMove: false,
   autoplay: {
     delay: 0,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
 });
