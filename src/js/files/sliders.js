@@ -10,15 +10,3 @@ const sliderProgram = new Swiper(".program__slider", {
     prevEl: ".program__arrow--prev",
   },
 });
-
-const sliderHeadliners = new Swiper(".headliners__slider", {
-  slidesPerView: "auto",
-  freeMode: true,
-  loop: true,
-  speed: 6000,
-  allowTouchMove: false,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-  },
-});

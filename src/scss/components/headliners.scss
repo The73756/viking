@@ -15,12 +15,14 @@
     clip-path: none;
     padding-bottom: 70px;
   }
-  &__slider {
-    overflow: visible;
+
+  &__list {
+    display: flex;
   }
-  &__slide {
+  &__img {
     width: 640px;
     height: 480px;
+    max-width: none;
     @include desktop {
       width: 355px;
       height: 340px;
@@ -34,11 +36,7 @@
       height: 160px;
     }
   }
-  &__slide-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+
   &__body {
     position: relative;
     clip-path: polygon(0 7%, 100% 1%, 100% 100%, 0 92%);
@@ -131,7 +129,7 @@
     right: -80px;
     bottom: -100px;
     z-index: 5;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
     span {
       font-family: "RezakCYR", sans-serif;
       font-weight: 600;

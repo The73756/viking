@@ -40,7 +40,6 @@
 
   &__list {
     display: flex;
-    animation: ticker-kf 18s linear infinite;
   }
 
   &__image {
@@ -61,25 +60,5 @@
       width: 200px;
       height: 160px;
     }
-  }
-}
-
-@keyframes tinker {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes ticker-kf {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(-108rem, 0, 0);
   }
 }

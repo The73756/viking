@@ -1,6 +1,7 @@
 import * as flsFunctions from "./files/functions.js";
-import sliders from "./files/sliders.js";
-import scroll from "./files/scroll.js"
+import "./files/sliders.js";
+import "./files/scroll.js";
+import "./files/marquee.js";
 
 flsFunctions.burger();
 flsFunctions.mediaAdaptive();
