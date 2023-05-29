@@ -1,0 +1,51 @@
+.for-whom {
+  padding: 140px 0px;
+  &__title {
+    font-size: 52px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--red-dark);
+    margin-bottom: 80px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  &__card {
+    max-width: 415px;
+    width: 100%;
+    padding: 0px 15px 50px 15px;
+    background-color: var(--biege-light);
+  }
+  &__card-img {
+    margin-bottom: 20px;
+    height: auto;
+    &--family {
+      width: 324px;
+    }
+  }
+  &__title-card {
+    font-size: 31px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__card-list {
+  }
+  &__card-item {
+    display: flex;
+    column-gap: 15px;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--brown-dark);
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__card-item-icon {
+    width: 12px;
+    height: 31px;
+    fill: var(--red-middle);
+  }
+}
