@@ -51,7 +51,7 @@
   transition: color var(--transition), background-color var(--transition);
 
   @include hover {
-    color: var(--grey-light);
+    color: var(--gray-light);
     background-color: var(--red-middle);
   }
 
