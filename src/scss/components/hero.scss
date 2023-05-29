@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  overflow: hidden;
   padding: 210px 0px 210px 0px;
   min-height: 100vh;
   color: var(--bg);
@@ -131,12 +132,21 @@
     @media (max-width: 992px) {
       position: absolute;
       display: block;
-      width: 100vw;
-      height: auto;
+      margin: 0;
+      font-family: "Runic", sans-serif;
+      font-size: 50px;
+      line-height: 120%;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      opacity: 0.5;
       left: 0;
       right: 0;
       bottom: 15px;
       z-index: 2;
+    }
+    @include mobile {
+      font-size: 25px;
+      bottom: 10px;
     }
   }
 }

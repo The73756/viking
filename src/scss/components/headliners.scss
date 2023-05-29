@@ -1,7 +1,9 @@
 .headliners {
+  position: relative;
   padding-bottom: 140px;
   overflow: hidden;
   clip-path: polygon(0 7%, 100% 1%, 100% 100%, 0% 100%);
+  z-index: 20;
   @include desktop {
     padding-bottom: 120px;
   }
@@ -131,7 +133,7 @@
     z-index: 5;
     transition: transform .2s ease;
     span {
-      font-family: "Rezak CYR", sans-serif;
+      font-family: "RezakCYR", sans-serif;
       font-weight: 600;
       font-size: 52px;
       line-height: 110%;

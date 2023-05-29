@@ -212,11 +212,7 @@
 
     @media (max-width: 428px) {
       height: 277px;
-      right: -15px;
-    }
-
-    @include small-mobile {
-      right: -22%;
+      right: -50px;
     }
   }
 }
