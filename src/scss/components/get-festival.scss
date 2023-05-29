@@ -1,0 +1,190 @@
+.get-festival {
+  padding-bottom: 140px;
+  @include desktop {
+    padding-bottom: 120px;
+  }
+  @include laptop {
+    padding-bottom: 100px;
+  }
+  @include tablet {
+    padding-bottom: 70px;
+  }
+  &__title {
+    font-size: 52px;
+    line-height: 110%;
+    color: var(--red-dark);
+    text-align: center;
+    margin-bottom: 35px;
+    @include desktop {
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+    @include laptop {
+      font-size: 35px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    @include tablet {
+      font-size: 23px;
+    }
+  }
+  &__content {
+    max-width: 1090px;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    @include desktop {
+      max-width: 645px;
+      font-size: 18px;
+    }
+    @include laptop {
+      max-width: 570px;
+      margin: 0px 0px 40px 0px;
+      text-align: left;
+    }
+    @include tablet {
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+  }
+  &__list {
+    display: none;
+    @media (max-width: 479px) {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    margin-bottom: 35px;
+    @include desktop {
+      margin-bottom: 25px;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+    @media (max-width: 479px) {
+      gap: 5px;
+    }
+  }
+  &__item {
+    flex: 0 1 640px;
+    padding: 125px 75px 75px 75px;
+    background-color: var(--red-middle);
+    color: var(--bg);
+    &:first-child {
+      clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
+    }
+    &:last-child {
+      clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    }
+    @include desktop {
+      padding: 110px 60px 70px 60px;
+    }
+    @include laptop {
+      clip-path: none !important;
+      padding: 50px 35px;
+    }
+    @include tablet {
+      padding: 30px 15px;
+    }
+    @include mobile {
+      flex-basis: auto;
+    }
+    @media (max-width: 479px) {
+      &:first-child {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%) !important;
+      }
+      &:last-child {
+        clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%) !important;
+      }
+      .get-festival__item-list {
+        display: none;
+      }
+    }
+  }
+  &__item-title {
+    font-size: 31px;
+    line-height: 140%;
+    margin-bottom: 35px;
+    @include desktop {
+      font-size: 23px;
+      margin-bottom: 25px;
+    }
+    @include laptop {
+      font-size: 16px;
+    }
+    @media (max-width: 479px) {
+      margin-bottom: 0;
+      font-size: 15px;
+    }
+  }
+  &__item-list {
+  }
+  &__list-item {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    span {
+      max-width: calc(100% - 40px);
+    }
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    @include desktop {
+      column-gap: 12px;
+      font-size: 14px;
+      span {
+        max-width: calc(100% - 32px);
+      }
+    }
+    @include laptop {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__list-item-icon {
+    width: 24px;
+    height: 31px;
+    color: inherit;
+    fill: currentColor;
+    @include desktop {
+      width: 20px;
+      height: 25px;
+    }
+    @media (max-width: 479px) {
+      fill: var(--red-middle);
+    }
+  }
+  &__btn {
+    display: block;
+    max-width: 415px;
+    width: 100%;
+    font-size: 31px;
+    line-height: 120%;
+    margin: 0 auto;
+    @include desktop {
+      max-width: none;
+      width: auto;
+      font-size: 23px;
+      padding: 15px 70px;
+    }
+    @media (max-width: 479px) {
+      font-size: 20px;
+    }
+    @media (max-width: 419px) {
+      width: 100%;
+    }
+  }
+}
