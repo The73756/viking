@@ -46,6 +46,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "smooth-scroll": "^16.1.3",
     "swiper": "^8.4.7",
     "vanilla-marquee": "^1.1.2"
   }

@@ -1170,7 +1170,7 @@ body {
 }
 
 .btn-primary {
-  font-family: "Rezak CYR", sans-serif;
+  font-family: "RezakCYR", sans-serif;
   padding: 26px 46px;
   background-color: var(--red-middle);
   border: 2px solid var(--red-middle);
@@ -1211,7 +1211,7 @@ body {
 .btn-outline {
   border: 2px solid var(--red-middle);
   color: var(--red-middle);
-  font-family: "Rezak CYR", "sans-serif";
+  font-family: "RezakCYR", "sans-serif";
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -1250,7 +1250,7 @@ body {
 }
 
 .title {
-  font-family: "Rezak CYR", sans-serif;
+  font-family: "RezakCYR", sans-serif;
   font-weight: 500;
   margin: 0;
 }
@@ -2127,7 +2127,7 @@ body {
   }
 }
 .own-element__offer-content {
-  font-family: "Rezak CYR", sans-serif;
+  font-family: "RezakCYR", sans-serif;
   font-weight: 500;
   max-width: 640px;
   margin: 0 auto;
@@ -2250,7 +2250,7 @@ body {
   }
 }
 .program__item {
-  font-family: "Rezak CYR", "sans-serif";
+  font-family: "RezakCYR", "sans-serif";
   font-size: 31px;
   line-height: 140%;
   color: var(--brown-dark);
@@ -2361,7 +2361,7 @@ body {
   }
 }
 .program__date {
-  font-family: "Rezak CYR", "sans-serif";
+  font-family: "RezakCYR", "sans-serif";
   font-weight: 500;
   font-size: 52px;
   line-height: 110%;
@@ -2972,7 +2972,7 @@ body {
   margin: 0;
   padding: 0;
   font-style: normal;
-  font-family: "Rezak CYR", "sans-serif";
+  font-family: "RezakCYR", "sans-serif";
   font-size: 31px;
   line-height: 140%;
   color: var(--brown-dark);
@@ -3556,7 +3556,7 @@ body {
   transition: transform 0.2s ease;
 }
 .headliners__card-title span {
-  font-family: "Rezak CYR", sans-serif;
+  font-family: "RezakCYR", sans-serif;
   font-weight: 600;
   font-size: 52px;
   line-height: 110%;
@@ -3621,7 +3621,7 @@ body {
 .footer-top {
   padding-top: 160px;
   padding-bottom: 130px;
-  font-family: "Rezak CYR", "sans-serif";
+  font-family: "RezakCYR", "sans-serif";
   color: var(--bg);
 }
 .footer-top__container {
