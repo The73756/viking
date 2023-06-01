@@ -1,0 +1,234 @@
+.offer {
+  &__slide {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__left {
+    --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
+    max-width: 803px;
+    background-color: var(--red-middle);
+    padding: 72px 117px 80px 111px;
+    height: 100%;
+    @include desktop {
+      padding: 90px 90px 110px 90px;
+    }
+    @include laptop {
+      padding: 50px 35px 70px 35px;
+    }
+    @include tablet {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
+      padding: 40px 15px 70px 15px;
+      height: auto;
+      z-index: 10;
+    }
+  }
+
+  &__right {
+    position: relative;
+    @include tablet {
+      width: 100%;
+      transform: translateY(33px);
+    }
+  }
+
+  &__prefix {
+    display: block;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    color: var(--biege-light);
+    @include desktop {
+      font-size: 14px;
+    }
+    @include laptop {
+      margin-bottom: 15px;
+    }
+    @include tablet {
+      font-size: 13px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 69px;
+    line-height: 100%;
+    color: var(--bg);
+    margin-bottom: 35px;
+    @include desktop {
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+    @include laptop {
+      font-size: 35px;
+      line-height: 110%;
+      margin-bottom: 15px;
+    }
+    @include tablet {
+      font-size: 29px;
+      line-height: 100%;
+    }
+  }
+
+  &__date {
+    font-family: "RezakCYR", "sans-serif";
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 110%;
+    color: var(--bg);
+    margin: 0px 0px 40px 0px;
+    @include desktop {
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+    @include laptop {
+      font-size: 23px;
+      line-height: 140%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--bg);
+    max-width: 529px;
+    margin: 0px 0px 65px 0px;
+    @include desktop {
+      max-width: 430px;
+      font-size: 14px;
+      margin-bottom: 60px;
+    }
+    @include laptop {
+      max-width: 290px;
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      max-width: none;
+      font-size: 13px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    box-sizing: border-box;
+    color: var(--bg);
+    border-color: var(--bg);
+    max-width: 300px;
+    width: 100%;
+    @include hover {
+      color: var(--red-middle);
+      background-color: var(--bg);
+    }
+    @include desktop {
+      max-width: 245px;
+    }
+    @include laptop {
+      max-width: 295px;
+    }
+  }
+
+  &__image {
+    max-width: none;
+    display: block;
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+    @include desktop {
+      width: 430px;
+    }
+    @include laptop {
+      width: 310px;
+    }
+    @include tablet {
+      clip-path: none;
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 264px;
+    top: 54.6%;
+    left: -52px;
+    transform: translateY(-50%);
+    @include desktop {
+      width: 244px;
+      top: 285px;
+      left: -47px;
+    }
+    @include laptop {
+      width: 169px;
+      top: 203px;
+      left: -30px;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__frame {
+    position: absolute;
+    font-family: "Runic", sans-serif;
+    margin: 0;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    color: var(--biege-light);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    @include desktop {
+      font-size: 32px;
+    }
+    @include mobile {
+      font-size: 25px;
+      opacity: 0.8;
+    }
+  }
+  &__controls {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include desktop {
+      margin-top: 25px;
+    }
+  }
+
+  &__control-btn {
+    width: 80px;
+    height: 32px;
+    color: var(--brown-dark);
+    transition: color var(--transition);
+
+    @include hover {
+      color: var(--red-middle);
+    }
+    @include tablet {
+      width: 65px;
+      height: 25px;
+    }
+    @include mobile {
+      width: 40px;
+      height: 15px;
+    }
+  }
+
+  &__arrow {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

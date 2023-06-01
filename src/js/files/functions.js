@@ -183,3 +183,19 @@ export function burger() {
     burgerMenu.classList.remove("open");
   }
 }
+
+export function handlerAnchor() {
+  const anchors = document.querySelectorAll(".header__nav-list a");
+  const burgerMenu = document.querySelector("#nav-burger");
+  const burgerOverlay = document.querySelector("#burger-overlay");
+
+  anchors.forEach((a) => {
+    a.addEventListener("click", () => {
+      if (burgerMenu.classList.contains("open")) {
+        document.body.classList.remove("body-hidden");
+        burgerOverlay.classList.remove("active");
+        burgerMenu.classList.remove("open");
+      }
+    });
+  });
+}

@@ -6,6 +6,7 @@
 @import "./base/settings";
 @import "./base/media";
 @import "./base/classes";
+@import "./base/aos";
 
 // ui
 @import "./ui/button";
@@ -24,6 +25,7 @@
 @import "./components/headliners";
 @import "./components/for-whom";
 @import "./components/get-festival";
+@import "./components/offer";
 @import "./components/program";
 @import "./components/images-ticker";
 @import "./components/bot";

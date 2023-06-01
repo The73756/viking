@@ -51,11 +51,13 @@
     overflow: hidden;
     grid-column: 6 span;
     background-color: rgba(242, 231, 220, 0.5);
-    &:first-child, &:nth-child(2) {
+    &:first-child,
+    &:nth-child(2) {
       transform: translateY(40px);
       padding: 95px 0px 110px 0px;
     }
-    &:nth-child(3), &:last-child {
+    &:nth-child(3),
+    &:last-child {
       transform: translateY(-40px);
       padding: 110px 0px 100px 0px;
     }
@@ -76,11 +78,13 @@
       clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     }
     @include desktop {
-      &:first-child, &:nth-child(2) {
+      &:first-child,
+      &:nth-child(2) {
         transform: translateY(35px);
         padding: 65px 0px 95px 0px;
       }
-      &:nth-child(3), &:last-child {
+      &:nth-child(3),
+      &:last-child {
         transform: translateY(-35px);
         padding: 85px 0px 55px 0px;
       }
@@ -92,11 +96,13 @@
       }
     }
     @include laptop {
-      &:first-child, &:nth-child(2) {
+      &:first-child,
+      &:nth-child(2) {
         transform: translateY(25px);
         padding: 62px 0px;
       }
-      &:nth-child(3), &:last-child {
+      &:nth-child(3),
+      &:last-child {
         transform: translateY(-25px);
         padding: 50px 0px 35px 0px;
       }
@@ -110,10 +116,12 @@
     @media (max-width: 639px) {
       grid-column: 12 span;
       padding: 64px 20px !important;
-      &:first-child, &:nth-child(2) {
+      &:first-child,
+      &:nth-child(2) {
         transform: translateY(0);
       }
-      &:nth-child(3), &:last-child {
+      &:nth-child(3),
+      &:last-child {
         transform: translateY(-20px);
       }
       &:first-child {
@@ -210,7 +218,7 @@
     }
   }
   &__offer-content {
-    font-family: 'RezakCYR', sans-serif;
+    font-family: "RezakCYR", sans-serif;
     font-weight: 500;
     max-width: 640px;
     margin: 0 auto;
