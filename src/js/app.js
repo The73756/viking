@@ -8,6 +8,4 @@ flsFunctions.burger();
 flsFunctions.mediaAdaptive();
 flsFunctions.handlerAnchor();
 
-Aos.init({
-  once: true,
-});
+Aos.init();

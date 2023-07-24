@@ -1,0 +1,116 @@
+.music {
+  position: relative;
+  padding-bottom: 260px;
+  overflow: hidden;
+  background-color: var(--red-middle);
+  color: var(--bg);
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 93%);
+  transform: translateY(-91px);
+  z-index: 20;
+  @include desktop {
+    padding-bottom: 240px;
+    transform: translateY(-78px);
+  }
+  @include laptop {
+    padding-bottom: 140px;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 94%);
+    transform: translateY(-53px);
+  }
+  @include tablet {
+    transform: translateY(-46px);
+  }
+  @include mobile {
+    padding-bottom: 100px;
+  }
+  &__title {
+    font-size: 52px;
+    line-height: 110%;
+    margin: 0px 0px 80px 0px;
+    @include desktop {
+      font-size: 35px;
+      margin-bottom: 60px;
+    }
+    @include laptop {
+      margin-bottom: 50px;
+    }
+    @include tablet {
+      font-size: 23px;
+      margin-bottom: 30px;
+    }
+  }
+  &__slider {
+    margin: 0;
+    overflow: visible;
+    max-width: 1200px;
+    @include desktop {
+      max-width: 925px;
+    }
+    @include laptop {
+      max-width: 630px;
+    }
+  }
+  &__slide {
+    @include hover {
+      .music__slide-title {
+        transform: perspective(500px) scale(1.1) rotateX(8.5deg) rotateY(3deg) rotateY(-9deg);
+      }
+    }
+    @include mobile {
+      width: 280px;
+    }
+  }
+  &__slide-img {
+    width: 450px;
+    height: 490px;
+    object-fit: cover;
+    @include desktop {
+      width: 370px;
+      height: 455px;
+    }
+    @include laptop {
+      width: 250px;
+      height: 315px;
+    }
+    @include mobile {
+      height: 190px;
+    }
+  }
+  &__slide-title {
+    @include flex-center;
+    position: absolute;
+    width: 415px;
+    height: 150px;
+    background-color: var(--neutral-dark);
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 91%);
+    right: 0;
+    bottom: -75px;
+    transition: transform 0.2s ease;
+    span {
+      font-size: 31px;
+      font-weight: 600;
+      line-height: 140%;
+    }
+    @include desktop {
+      width: 340px;
+      height: 120px;
+      bottom: -60px;
+      span {
+        font-size: 23px;
+      }
+    }
+    @include laptop {
+      width: 245px;
+      height: 85px;
+      span {
+        font-size: 23px;
+      }
+    }
+    @include mobile {
+      width: 205px;
+      height: 75px;
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}

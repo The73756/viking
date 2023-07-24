@@ -47,12 +47,15 @@
       font-size: 13px;
       margin-bottom: 25px;
     }
+    @include mobile {
+      margin-bottom: 15px;
+    }
   }
   &__list {
     display: none;
     @media (max-width: 479px) {
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
   &__wrapper {
@@ -69,6 +72,7 @@
     }
     @include mobile {
       flex-direction: column;
+      margin-bottom: 20px;
     }
     @media (max-width: 479px) {
       gap: 5px;
@@ -93,7 +97,7 @@
       padding: 50px 35px;
     }
     @include tablet {
-      padding: 30px 15px;
+      padding: 25px 15px;
     }
     @include mobile {
       flex-basis: auto;
@@ -150,7 +154,7 @@
     }
     @include laptop {
       &:not(:last-child) {
-        margin-bottom: 15px;
+        margin-bottom: 14px;
       }
     }
   }

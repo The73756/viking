@@ -189,13 +189,13 @@ export function handlerAnchor() {
   const burgerMenu = document.querySelector("#nav-burger");
   const burgerOverlay = document.querySelector("#burger-overlay");
 
-  anchors.forEach((a) => {
+  anchors.forEach(a => {
     a.addEventListener("click", () => {
       if (burgerMenu.classList.contains("open")) {
         document.body.classList.remove("body-hidden");
         burgerOverlay.classList.remove("active");
         burgerMenu.classList.remove("open");
       }
-    });
-  });
+    })
+  })
 }

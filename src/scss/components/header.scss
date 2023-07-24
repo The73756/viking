@@ -5,6 +5,25 @@
   right: 0;
   padding: 50px 0;
   z-index: 90;
+  &._red {
+    .header__nav-list {
+      a {
+        color: var(--brown-dark);
+        &::before {
+          background-color: var(--brown-dark);
+        }
+      }
+    }
+    .header__social-btn-icon {
+      fill: var(--brown-dark);
+      @include hover {
+        fill: var(--brown-light);
+      }
+    }
+    .header__burger-line {
+      background-color: var(--red-dark);
+    }
+  }
   @media (max-width: 1539px) {
     padding: 35px 0;
   }

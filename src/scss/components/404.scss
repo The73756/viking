@@ -1,0 +1,91 @@
+.error {
+  padding: 265px 0px 175px 0px;
+  font-family: "RezakCYR", sans-serif;
+  color: var(--red-dark);
+  z-index: 1;
+  @include desktop {
+    padding: 220px 0px 130px 0px;
+  }
+  @include laptop {
+    padding: 140px 0px 100px 0px;
+  }
+  @include mobile {
+    padding: 100px 0px 90px 0px;
+  }
+  &__container {
+    @include flex-between;
+    @include laptop {
+      display: block;
+    }
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 91px;
+    line-height: 125%;
+    margin-bottom: 35px;
+    @include desktop {
+      font-size: 69px;
+      margin-bottom: 20px;
+    }
+    @include laptop {
+      margin-bottom: 15px;
+    }
+    @include tablet {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+  }
+  &__content {
+    max-width: 750px;
+    margin: 0px 0px 90px 0px;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 140%;
+    @include desktop {
+      max-width: 612px;
+      font-size: 23px;
+      margin-bottom: 70px;
+    }
+    @include laptop {
+      margin-bottom: 35px;
+    }
+    @include tablet {
+      max-width: 240px;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    max-width: 415px;
+    font-size: 31px;
+    width: 100%;
+    text-align: center;
+    @include desktop {
+      font-size: 23px;
+      padding: 16px;
+      max-width: 335px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+    @media (max-width: 479px) {
+      max-width: none;
+    }
+  }
+  &__img {
+    display: block;
+    width: 515px;
+    height: auto;
+    @include desktop {
+      width: 425px;
+    }
+    @include laptop {
+      margin-bottom: 50px;
+    }
+    @include tablet {
+      width: 270px;
+      margin-bottom: 40px;
+    }
+  }
+}

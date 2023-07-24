@@ -6,7 +6,7 @@ import marquee from "vanilla-marquee";
 
   items.forEach((item) => {
     const direction = item.dataset.direction || "left";
-
+    
     new marquee(item, {
       pauseOnHover: true,
       gap: 0,
@@ -14,7 +14,7 @@ import marquee from "vanilla-marquee";
       duplicated: true,
       delayBeforeStart: 0,
       startVisible: true,
-      direction,
+      direction
     });
   });
 })();
