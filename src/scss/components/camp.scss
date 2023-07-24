@@ -1,0 +1,74 @@
+.camp {
+  background-color: var(--red-middle);
+  --webkit-clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
+
+  &__container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+    display: flex;
+    gap: 32px;
+  }
+
+  &__right {
+  }
+
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__desc {
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 230px;
+  }
+
+  &__icon {
+  }
+
+  &__img {
+    height: 100%;
+    width: auto;
+    --webkit-clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+  }
+
+  &__text {
+  }
+
+  &__btn {
+  }
+
+  &__left {
+  }
+}
+
+.container {
+}
+
+.section-container {
+}
+
+.title {
+}
+
+.section-title {
+}
+
+.list {
+}
+
+.btn {
+}
+
+.btn-outline {
+}

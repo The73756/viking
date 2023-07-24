@@ -1,0 +1,186 @@
+.guide {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.guide-tabs {
+  .tabs__panel--active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 33px;
+    row-gap: 60px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 120px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  &__nav-btn {
+    font-size: 31px;
+    font-family: "Rezak CYR", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--gray);
+    position: relative;
+    transition: color var(--transition);
+
+    &:after {
+      content: "";
+      opacity: 0;
+      width: 100%;
+      height: 4px;
+      background-color: currentColor;
+      display: block;
+      position: absolute;
+      bottom: -16px;
+      transition: opacity var(--transition);
+    }
+  }
+
+  .tabs__nav-btn--active {
+    color: var(--red-middle);
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    color: var(--neutral-dark);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 140%;
+    margin-bottom: 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 27px;
+  }
+
+  &__card {
+    --current-accent-color: var(--red-middle);
+
+    &--ground {
+      --current-accent-color: var(--green);
+    }
+
+    &--air {
+      --current-accent-color: var(--gray-dark);
+    }
+
+    &--aqua {
+      --current-accent-color: var(--blue-dark);
+    }
+  }
+
+  &__icon {
+    margin-bottom: 22px;
+    color: var(--current-accent-color);
+  }
+
+  &__badge {
+    color: var(--current-accent-color);
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.18px;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-color: var(--biege-light);
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      z-index: -1;
+    }
+  }
+
+  &__time {
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-dark);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  &__desc {
+    margin: 0 0 4px;
+    padding: 0;
+    color: var(--neutral-dark);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.18px;
+  }
+
+  &__link {
+    display: inline-block;
+    color: var(--current-accent-color);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.18px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: currentColor;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    @include hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__btn {
+    // Такая есть в button.scss но чуть другая
+    border: 2px solid var(--current-accent-color);
+    color: var(--current-accent-color);
+    font-family: "RezakCYR", "sans-serif";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    transition: color var(--transition), background-color var(--transition);
+
+    @include hover {
+      color: var(--gray-light);
+      background-color: var(--current-accent-color);
+    }
+  }
+}
