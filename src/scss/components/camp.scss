@@ -27,6 +27,10 @@
       padding-bottom: 40px;
       gap: 32px;
     }
+
+    @include mobile {
+      padding: 60px 0 40px;
+    }
   }
 
   &__right {
@@ -177,6 +181,11 @@
     width: 440px;
     border-color: var(--bg);
     color: var(--bg);
+
+    @include hover {
+      background-color: var(--bg);
+      color: var(--red-middle);
+    }
 
     @include desktop {
       max-width: 336px;
