@@ -210,11 +210,11 @@
   }
 
   @include desktop {
-    margin-top: 206px;
+    margin-top: 80px;
   }
 
   @include laptop {
-    margin-top: 200px;
+    margin-top: 100px;
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
   }
 
