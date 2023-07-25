@@ -7,6 +7,18 @@
 
   &__title {
     margin-bottom: 60px;
+
+    @include desktop {
+      margin-bottom: 50px;
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
+    }
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -16,6 +28,15 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 33px;
     row-gap: 60px;
+
+    @include desktop {
+      margin-bottom: 50px;
+    }
+
+    @include laptop {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 50px;
+    }
   }
 
   &__nav {
@@ -23,16 +44,39 @@
     gap: 120px;
     padding: 0;
     margin-bottom: 60px;
+
+    @include desktop {
+      margin-bottom: 50px;
+      gap: 90px;
+    }
+
+    @include laptop {
+      gap: 70px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      column-gap: 32px;
+      row-gap: 16px;
+    }
   }
 
   &__nav-btn {
     font-size: 31px;
     font-family: "RezakCYR", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 140%;
     color: var(--gray);
     position: relative;
     transition: color var(--transition);
+
+    @include desktop {
+      font-size: 23px;
+    }
+
+    @include tablet {
+      font-size: 15px;
+    }
 
     &:after {
       content: "";
@@ -44,6 +88,25 @@
       position: absolute;
       bottom: -16px;
       transition: opacity var(--transition);
+
+      @include desktop {
+        bottom: -14px;
+      }
+
+      @include laptop {
+        bottom: -12px;
+      }
+
+      @include tablet {
+        bottom: -6px;
+        height: 2px;
+      }
+    }
+
+    @include hover {
+      &:after {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -61,7 +124,15 @@
     font-size: 26px;
     font-style: normal;
     line-height: 140%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+
+    @include desktop {
+      font-size: 23px;
+    }
+
+    @include tablet {
+      font-size: 15px;
+    }
   }
 
   &__wrapper {
@@ -69,6 +140,18 @@
     gap: 25px;
     align-items: center;
     margin-bottom: 27px;
+
+    @include desktop {
+      margin-bottom: 24px;
+    }
+
+    @include laptop {
+      margin-bottom: 16px;
+    }
+
+    @include tablet {
+      gap: 12px;
+    }
   }
 
   &__card {
@@ -90,6 +173,12 @@
   &__icon {
     margin-bottom: 22px;
     color: var(--current-accent-color);
+
+    @include tablet {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 16px;
+    }
   }
 
   &__time {
@@ -100,6 +189,14 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 1;
+
+    @include desktop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 
   &__desc {
@@ -111,6 +208,14 @@
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.18px;
+
+    @include desktop {
+      font-size: 14px;
+    }
+
+    @include tablet {
+      font-size: 13px;
+    }
   }
 
   &__link {
@@ -122,7 +227,7 @@
     line-height: 140%;
     letter-spacing: -0.18px;
     position: relative;
-    margin-bottom: 40px;
+    transition: opacity var(--transition);
 
     &:before {
       content: "";
@@ -131,14 +236,34 @@
       position: absolute;
       background-color: currentColor;
       bottom: 0;
-      opacity: 0;
-      transition: opacity var(--transition);
     }
 
     @include hover {
-      &:before {
-        opacity: 1;
-      }
+      opacity: 0.7;
+    }
+
+    @include desktop {
+      font-size: 14px;
+    }
+
+    @include tablet {
+      font-size: 13px;
+    }
+  }
+
+  &__middle {
+    margin-bottom: 40px;
+
+    @include desktop {
+      margin-bottom: 34px;
+    }
+
+    @include laptop {
+      margin-bottom: 28px;
+    }
+
+    @include tablet {
+      margin-bottom: 38px;
     }
   }
 }
@@ -149,6 +274,7 @@
     width: auto;
     padding: 110px 152px 130px 152px;
     border-radius: 0;
+    background: var(--bg);
 
     --current-accent-color: var(--red-middle);
 
@@ -281,9 +407,6 @@
     }
   }
 
-  &__badge {
-  }
-
   &__badge-wraper {
     display: flex;
     align-items: center;
@@ -312,16 +435,5 @@
 
   &__btn {
     padding: 20px 120px;
-
-    @include desktop {
-      font-size: 16px;
-    }
-
-    @include tablet {
-      padding: 16px 0;
-      width: 100%;
-      text-align: center;
-      font-size: 14px;
-    }
   }
 }
