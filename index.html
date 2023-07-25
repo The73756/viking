@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="shortcut icon" href="./img/logos/favicon.png" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230602211938" />
-  <title>Imandra Viking Fest</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20230725173424" />
+  <title>Pauchok</title>
 </head>
 
 <body>
@@ -30,7 +30,10 @@
           <a href="#about-festival">О фестивале</a>
         </li>
         <li>
-          <a href="#program">Программа 2023</a>
+          <a href="#headliners">Хэдлайнеры</a>
+        </li>
+        <li>
+          <a href="#category-tickets">Билеты</a>
         </li>
         <li>
           <a href="#contacts">Контакты</a>
@@ -117,7 +120,10 @@
         <p data-aos="fade-right" class="own-element__hieroglyphs">
           Имандра викинг фест 2023 мончегорск Имандра викинг фест 2023 мончегорск Имандра викинг
         </p>
-        <picture><source srcset="img/element-1.webp" type="image/webp"><img src="img/element-1.png" alt="Элемент" class="own-element__img" /></picture>
+        <img
+          src="img/element-1.png"
+          alt="Элемент"
+          class="own-element__img own-element__img--brown" />
         <p data-aos="fade-right" class="own-element__descr">
           Феерические выступления популярных артистов фолк и металл-сцены
         </p>
@@ -126,20 +132,31 @@
         <p data-aos="fade-right" class="own-element__hieroglyphs">
           Имандра викинг фест 2023 мончегорск Имандра викинг фест 2023 мончегорск Имандра викинг
         </p>
-        <picture><source srcset="img/element-2.webp" type="image/webp"><img src="img/element-2.png" alt="Элемент" class="own-element__img" /></picture>
+        <img
+          src="img/element-2.png"
+          alt="Элемент"
+          class="own-element__img own-element__img--blue" />
         <p data-aos="fade-right" class="own-element__descr">
           Погружение в атмосферу северного Средневековья, путешествуя на драккаре
         </p>
       </div>
       <div class="own-element__card">
-        <picture><source srcset="img/element-3.webp" type="image/webp"><img src="img/element-3.png" alt="Элемент" class="own-element__img" /></picture>
-        <p data-aos="fade-right" class="own-element__descr">Арктическая кухня</p>
+        <img
+          src="img/element-3.png"
+          alt="Элемент"
+          class="own-element__img own-element__img--green" />
+        <p data-aos="fade-right" class="own-element__descr">
+          Пир с диковинами Арктической кухни, который воодушевит любого викинга
+        </p>
         <p data-aos="fade-right" class="own-element__hieroglyphs own-element__hieroglyphs--bottom">
           Имандра викинг фест 2023 мончегорск Имандра викинг фест 2023 мончегорск Имандра викинг
         </p>
       </div>
       <div class="own-element__card">
-        <picture><source srcset="img/element-4.webp" type="image/webp"><img src="img/element-4.png" alt="Элемент" class="own-element__img" /></picture>
+        <img
+          src="img/element-4.png"
+          alt="Элемент"
+          class="own-element__img own-element__img--red" />
         <p data-aos="fade-right" class="own-element__descr">
           Файер-шоу и другие развлечения <br />
           для викингов и валькирий всех возрастов
@@ -171,40 +188,19 @@
   </div>
 </section>
 
-        <section class="headliners">
+        <section class="headliners" id="headliners">
   <ul data-direction="right" class="headliners__list list marquee-wrapper">
-    <li class="headliners__item" loading="lazy">
-      <img
-        src="img/headliners/slide-1.jpg"
-        alt="Изображение"
-        class="headliners__img"
-        width="640"
-        height="480" />
-    </li>
-    <li class="headliners__item" loading="lazy">
-      <img
-        src="img/headliners/slide-2.jpg"
-        alt="Изображение"
-        class="headliners__img"
-        width="640"
-        height="480" />
-    </li>
-    <li class="headliners__item" loading="lazy">
-      <img
-        src="img/headliners/slide-3.jpg"
-        alt="Изображение"
-        class="headliners__img"
-        width="640"
-        height="480" />
+    <li class="headliners__item">
+      <picture><source srcset="img/headliners/slide-1.webp" type="image/webp"><img src="img/headliners/slide-1.jpg" alt="Изображение" class="headliners__img" /></picture>
     </li>
     <li class="headliners__item">
-      <img
-        src="img/headliners/slide-4.jpg"
-        alt="Изображение"
-        class="headliners__img"
-        loading="lazy"
-        width="640"
-        height="480" />
+      <picture><source srcset="img/headliners/slide-2.webp" type="image/webp"><img src="img/headliners/slide-2.jpg" alt="Изображение" class="headliners__img" /></picture>
+    </li>
+    <li class="headliners__item">
+      <picture><source srcset="img/headliners/slide-3.webp" type="image/webp"><img src="img/headliners/slide-3.jpg" alt="Изображение" class="headliners__img" /></picture>
+    </li>
+    <li class="headliners__item">
+      <picture><source srcset="img/headliners/slide-4.webp" type="image/webp"><img src="img/headliners/slide-4.jpg" alt="Изображение" class="headliners__img" /></picture>
     </li>
   </ul>
   <div class="headliners__body">
@@ -213,17 +209,60 @@
       <div class="headliners__wrapper">
         <a href="#" class="headliners__card">
           <picture><source srcset="img/headliners/headliners-1.webp" type="image/webp"><img src="img/headliners/headliners-1.jpg" alt="Люди" class="headliners__card-img" /></picture>
-          <div class="headliners__card-title"><span>Слот</span></div>
+          <div class="headliners__card-bottom">
+            <div class="headliners__card-title"><span>Слот</span></div>
+            <span class="headliners__card-date">20 августа</span>
+          </div>
         </a>
         <a href="#" class="headliners__card">
           <picture><source srcset="img/headliners/headliners-2.webp" type="image/webp"><img src="img/headliners/headliners-2.jpg" alt="Человек" class="headliners__card-img" /></picture>
-          <div class="headliners__card-title">
-            <span
-              >Нейромонах <br />
-              Феофан</span
-            >
+          <div class="headliners__card-bottom">
+            <div class="headliners__card-title">
+              <span>CATHARSIS</span>
+            </div>
+            <span class="headliners__card-date">20 августа</span>
           </div>
         </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="music">
+  <div class="container">
+    <h2 class="title music__title">Музыканты фестиваля</h2>
+    <div class="swiper music__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide music__slide">
+          <picture><source srcset="img/headliners/headliners-1.webp" type="image/webp"><img src="img/headliners/headliners-1.jpg" alt="Изображение" class="music__slide-img" /></picture>
+          <div class="title music__slide-title">
+            <span>HELVEGEN</span>
+          </div>
+        </div>
+        <div class="swiper-slide music__slide">
+          <picture><source srcset="img/headliners/headliners-1.webp" type="image/webp"><img src="img/headliners/headliners-1.jpg" alt="Изображение" class="music__slide-img" /></picture>
+          <div class="title music__slide-title">
+            <span>HELVEGEN</span>
+          </div>
+        </div>
+        <div class="swiper-slide music__slide">
+          <picture><source srcset="img/headliners/headliners-1.webp" type="image/webp"><img src="img/headliners/headliners-1.jpg" alt="Изображение" class="music__slide-img" /></picture>
+          <div class="title music__slide-title">
+            <span>HELVEGEN</span>
+          </div>
+        </div>
+        <div class="swiper-slide music__slide">
+          <picture><source srcset="img/headliners/headliners-1.webp" type="image/webp"><img src="img/headliners/headliners-1.jpg" alt="Изображение" class="music__slide-img" /></picture>
+          <div class="title music__slide-title">
+            <span>HELVEGEN</span>
+          </div>
+        </div>
+        <div class="swiper-slide music__slide">
+          <picture><source srcset="img/headliners/headliners-1.webp" type="image/webp"><img src="img/headliners/headliners-1.jpg" alt="Изображение" class="music__slide-img" /></picture>
+          <div class="title music__slide-title">
+            <span>HELVEGEN</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -407,88 +446,86 @@
   </div>
 </section>
 
-        <div class="offer">
+        <section class="category-tickets" id="category-tickets">
   <div class="container">
-    <div class="swiper offer__slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide offer__slide">
-          <div class="offer__left">
-            <span data-aos="fade-down" class="offer__prefix">Иммерсивное шоу</span>
-            <h3 data-aos="fade-right" class="title offer__subtitle">Скандинавское погружение</h3>
-            <p data-aos="fade-right" class="offer__date">
-              <time datetime="2023-08-27">27</time>-<time datetime="2023-08-28">28</time> августа
-            </p>
-
-            <p data-aos="fade-right" class="offer__text">
-              Станьте главным героем саги о викингах. Вы сможете примерить на себя любую из ролей,
-              путь выбираете вы сами. Незабываемые ощущения и новые друзья — то, чем окончится ваша
-              история «Скандинавского погружения»!
-            </p>
-
-            <button class="btn btn-outline offer__btn">Купить билет</button>
-          </div>
-          <div class="offer__right">
-            <img
-              src="./img/program/program-main.jpg"
-              alt=""
-              aria-hidden="true"
-              class="offer__image" />
-            <img
-              src="./img/program/program-second.png"
-              alt=""
-              aria-hidden="true"
-              class="offer__icon" />
-          </div>
-        </div>
-        <div class="swiper-slide offer__slide">
-          <div class="offer__left">
-            <span data-aos="fade-down" class="offer__prefix">Иммерсивное шоу</span>
-            <h3 data-aos="rfade-ight" class="title offer__subtitle">Скандинавское погружение</h3>
-            <p data-aos="fade-right" class="offer__date">
-              <time datetime="2023-08-27">27</time>-<time datetime="2023-08-28">28</time> августа
-            </p>
-
-            <p data-aos="fade-right" class="offer__text">
-              Станьте главным героем саги о викингах. Вы сможете примерить на себя любую из ролей,
-              путь выбираете вы сами. Незабываемые ощущения и новые друзья — то, чем окончится ваша
-              история «Скандинавского погружения»!
-            </p>
-
-            <button class="btn btn-outline offer__btn">Купить билет</button>
-          </div>
-          <div class="offer__right">
-            <img
-              src="./img/program/program-main.jpg"
-              alt=""
-              aria-hidden="true"
-              class="offer__image" />
-            <img
-              src="./img/program/program-second.png"
-              alt=""
-              aria-hidden="true"
-              class="offer__icon" />
-          </div>
-        </div>
+    <h2 data-aos="fade-right" class="title section-title category-tickets__title">
+      Категории билетов
+    </h2>
+    <p data-aos="fade-right" class="category-tickets__content">
+      Чтобы стать участником Imandra Viking Fest 2023, необходимо приобрести входной билет. Сделать
+      это можно в один клик!
+    </p>
+    <div class="category-tickets__wrapper">
+      <div class="category-tickets__item">
+        <h4 data-aos="fade-right" class="title category-tickets__item-title">
+          Входной билет <br />
+          посетителям от 12 лет:
+        </h4>
+        <ul class="list category-tickets__list">
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>входной;</span>
+          </li>
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>проход на территорию фестиваля на оба дня проведения;</span>
+          </li>
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>посещение концертной программы;</span>
+          </li>
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>посещение бесплатных мастер-классов и активностей фестиваля.</span>
+          </li>
+        </ul>
       </div>
-      <p class="offer__frame">
-        Имандра викинг фест 2023 мончегорск Имандра викинг фест 2023 мончегорск Имандра викинг фест
-        2023 мончегорск Имандра викинг фест 2023 мончегорск
-      </p>
+      <div class="category-tickets__item">
+        <h4 data-aos="fade-right" class="title category-tickets__item-title">
+          Семейный входной билет <br />
+          1 взрослый и дети до 12 лет:
+        </h4>
+        <ul class="list category-tickets__list">
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>семейный;</span>
+          </li>
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>проход на территорию фестиваля на оба дня проведения;</span>
+          </li>
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>посещение концертной программы; </span>
+          </li>
+          <li class="category-tickets__list-item">
+            <svg class="category-tickets__list-icon">
+              <use xlink:href="img/icons/icons.svg#icon-odal"></use>
+            </svg>
+            <span>посещение бесплатных мастер-классов и активностей фестиваля.</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="offer__controls">
-      <button class="offer__control-btn btn">
-        <svg class="offer__arrow offer__arrow--prev" width="80" height="32">
-          <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-        </svg>
-      </button>
-      <button class="offer__control-btn btn">
-        <svg class="offer__arrow offer__arrow--next" width="80" height="32">
-          <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-        </svg>
-      </button>
+    <div class="category-tickets__bottom">
+      <a href="#" class="btn-outline category-tickets__btn">Купить билет</a>
     </div>
   </div>
-</div>
+</section>
 
         <section class="images-ticker">
   <div class="images-ticker__container">
@@ -499,7 +536,6 @@
     <ul class="images-ticker__list list marquee-wrapper">
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-1.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -508,7 +544,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-2.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -517,7 +552,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-3.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -526,7 +560,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-4.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -535,7 +568,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-5.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -544,7 +576,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-6.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -553,7 +584,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-7.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -562,7 +592,6 @@
       </li>
       <li class="images-ticker__item">
         <img
-          loading="lazy"
           src="./img/photos-ticker/img-8.png"
           alt="Фото с фестиваля"
           class="images-ticker__image"
@@ -625,6 +654,671 @@
           alt=""
           aria-hidden="true" />
       </picture>
+    </div>
+  </div>
+</section>
+
+        <section class="camp">
+  <div class="container camp__container section-container">
+    <div class="camp__right">
+      <div class="camp__wrapper">
+        <h2 class="camp__title title section-title" data-aos="fade-up-right">
+          Imandra Viking Camp
+        </h2>
+        <p class="camp__desc" data-aos="fade-up-right">
+          Для полного погружения в атмосферу фестиваля станьте жителем нашего кемпинга. К вашим
+          услугам полноценный палаточный городок на территории горнолыжного комплекса Лопарьстан.
+          Вас ожидают:
+        </p>
+        <ul class="list camp__list">
+          <li class="camp__item" data-aos="fade-up">
+            <img
+              src="img/icons/icon-camp-1.svg"
+              class="camp__icon"
+              alt=""
+              aria-hidden="true"
+              width="72"
+              height="72" />
+
+            <p class="camp__text">комфортабельные палатки для семей</p>
+          </li>
+          <li class="camp__item" data-aos="fade-up">
+            <img
+              src="img/icons/icon-camp-2.svg"
+              class="camp__icon"
+              alt=""
+              aria-hidden="true"
+              width="72"
+              height="72" />
+
+            <p class="camp__text">площадка для вечерних посиделок у костра</p>
+          </li>
+          <li class="camp__item" data-aos="fade-up">
+            <img
+              src="img/icons/icon-camp-3.svg"
+              class="camp__icon"
+              alt=""
+              aria-hidden="true"
+              width="72"
+              height="72" />
+
+            <p class="camp__text">вечерние шаттлы до фестиваля и обратно</p>
+          </li>
+          <li class="camp__item" data-aos="fade-up">
+            <img
+              src="img/icons/icon-camp-4.svg"
+              class="camp__icon"
+              alt=""
+              aria-hidden="true"
+              width="72"
+              height="72" />
+
+            <p class="camp__text">теплая атмосфера среди единомышленников</p>
+          </li>
+          <li class="camp__item" data-aos="fade-up">
+            <img
+              src="img/icons/icon-camp-5.svg"
+              class="camp__icon"
+              alt=""
+              aria-hidden="true"
+              width="72"
+              height="72" />
+
+            <p class="camp__text">незабываемые виды северной природы</p>
+          </li>
+        </ul>
+      </div>
+      <button class="btn btn-outline btn-element camp__btn" data-aos="fade-up">
+        подробнее о кемпинге
+      </button>
+    </div>
+    <div class="camp__left" data-aos="fade-up-left">
+      <picture><source srcset="img/camp.webp" type="image/webp"><img src="img/camp.png" class="camp__img" alt="Изображение кемпинга" /></picture>
+    </div>
+  </div>
+</section>
+
+        <section class="guide">
+  <div class="container guide__container section-container">
+    <h2 class="guide__title title section-title" data-aos="fade-right">На фестивале тебя ждёт:</h2>
+    <div class="tabs guide-tabs" data-tabs="tab" data-aos="fade-up">
+      <ul class="tabs__nav guide-tabs__nav list">
+        <li class="tabs__nav-item guide-tabs__item">
+          <button class="tabs__nav-btn btn guide-tabs__nav-btn" type="button">Мастер классы</button>
+        </li>
+        <li class="tabs__nav-item">
+          <button class="tabs__nav-btn btn guide-tabs__nav-btn" type="button">Игры Тора</button>
+        </li>
+        <li class="tabs__nav-item">
+          <button class="tabs__nav-btn btn guide-tabs__nav-btn" type="button">
+            Для юных викингов
+          </button>
+        </li>
+      </ul>
+      <div class="tabs__content guide-tabs__content">
+        <div class="tabs__panel guide-tabs__panel">
+          <div class="guide-tabs__card guide-tabs__card--ground" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Гончарная мастерская «Живые недра»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45 </time>
+                </p>
+                <span class="guide-tabs__badge badge">7+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Посетите гончарную мастерскую «Живые недра», освойте древнее искусство керамиста и
+                познакомьтесь с процессом создания изделий из глины.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#armor"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская доспехов</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">7+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Посетите мастер-класс по плетению кольчужного браслета и создайте уникальный
+                аксессуар, символизирующий упорство и стойкость викингов!
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--ground" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#runes"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская «Орнаменты Имандры»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">6+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                На мастер-классе «Орнаменты Имандры» изучите искусство набойки на ткани, воссоздайте
+                волшебные северные узоры и превратите свое одеяние в произведение искусства.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="ground">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card guide-tabs__card--air" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#rope"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская оберегов русского Севера</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">10+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Создайте свою обережную куклу в мастерской Русского Севера. Привнесите в дом символы
+                защиты, благополучия и традиции.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--air" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская «Орнаменты Имандры»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">6+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                На мастер-классе «Орнаменты Имандры» изучите искусство набойки на ткани, воссоздайте
+                волшебные северные узоры и превратите свое одеяние в произведение искусства.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="aqua">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--aqua" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская оберегов русского Севера</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">10+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Создайте свою обережную куклу в мастерской Русского Севера. Привнесите в дом символы
+                защиты, благополучия и традиции.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">Бесплатно</button>
+          </div>
+        </div>
+        <div class="tabs__panel guide-tabs__panel">
+          <div class="guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Гончарная мастерская «Живые недра»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">7+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Посетите гончарную мастерскую «Живые недра», освойте древнее искусство керамиста и
+                познакомьтесь с процессом создания изделий из глины.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская доспехов</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">7+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Посетите мастер-класс по плетению кольчужного браслета и создайте уникальный
+                аксессуар, символизирующий упорство и стойкость викингов!
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Бесплатно
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--ground" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская «Орнаменты Имандры»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">6+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                На мастер-классе «Орнаменты Имандры» изучите искусство набойки на ткани, воссоздайте
+                волшебные северные узоры и превратите свое одеяние в произведение искусства.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="ground">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская оберегов русского Севера</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">10+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Создайте свою обережную куклу в мастерской Русского Севера. Привнесите в дом символы
+                защиты, благополучия и традиции.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--air" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская «Орнаменты Имандры»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">6+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                На мастер-классе «Орнаменты Имандры» изучите искусство набойки на ткани, воссоздайте
+                волшебные северные узоры и превратите свое одеяние в произведение искусства.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="aqua">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--aqua" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская оберегов русского Севера</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">10+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Создайте свою обережную куклу в мастерской Русского Севера. Привнесите в дом символы
+                защиты, благополучия и традиции.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">Бесплатно</button>
+          </div>
+        </div>
+        <div class="tabs__panel guide-tabs__panel">
+          <div class="guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Гончарная мастерская «Живые недра»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">7+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Посетите гончарную мастерскую «Живые недра», освойте древнее искусство керамиста и
+                познакомьтесь с процессом создания изделий из глины.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская доспехов</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">7+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Посетите мастер-класс по плетению кольчужного браслета и создайте уникальный
+                аксессуар, символизирующий упорство и стойкость викингов!
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Бесплатно
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--ground" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская «Орнаменты Имандры»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">6+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                На мастер-классе «Орнаменты Имандры» изучите искусство набойки на ткани, воссоздайте
+                волшебные северные узоры и превратите свое одеяние в произведение искусства.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="ground">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская оберегов русского Севера</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">10+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Создайте свою обережную куклу в мастерской Русского Севера. Привнесите в дом символы
+                защиты, благополучия и традиции.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--air" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская «Орнаменты Имандры»</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">6+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                На мастер-классе «Орнаменты Имандры» изучите искусство набойки на ткани, воссоздайте
+                волшебные северные узоры и превратите свое одеяние в произведение искусства.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="aqua">
+              Купить билет
+            </button>
+          </div>
+          <div class="guide-tabs__card guide-tabs__card--aqua" data-aos="fade-up">
+            <svg class="guide-tabs__icon" width="64" height="57">
+              <use xlink:href="img/icons/icons.svg#dish"></use>
+            </svg>
+            <div class="guide-tabs__top">
+              <h3 class="guide-tabs__title title">Мастерская оберегов русского Севера</h3>
+              <div class="guide-tabs__wrapper">
+                <p class="guide-tabs__time">
+                  <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+                </p>
+                <span class="guide-tabs__badge badge">10+</span>
+              </div>
+            </div>
+            <div class="guide-tabs__middle">
+              <p class="guide-tabs__desc">
+                Создайте свою обережную куклу в мастерской Русского Севера. Привнесите в дом символы
+                защиты, благополучия и традиции.
+              </p>
+              <a href="#" class="guide-tabs__link">Подробнее</a>
+            </div>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">Бесплатно</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal guide-modal">
+    <div
+      class="graph-modal__container guide-modal__container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="fire">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--ground"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="ground">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--air"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="air">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--aqua"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="aqua">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
     </div>
   </div>
 </section>
@@ -1049,6 +1743,7 @@
     <div class="container footer-bottom__container">
       <p class="footer-bottom__text">&copy; Агентство развития Мончегорска, 2023</p>
       <a href="#" class="footer-bottom__text footer-bottom__link"> Политика конфиденциальности </a>
+      <a href="#" class="footer-bottom__text footer-bottom__link"> Правила посещения фестиваля </a>
       <img
         src="./img/beer.svg"
         alt=""
@@ -1060,6 +1755,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230602211938"></script>
+    <script src="js/app.min.js?_v=20230725173424"></script>
 </body>
 </html>
