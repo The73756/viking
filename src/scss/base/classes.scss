@@ -17,6 +17,9 @@
   overflow: hidden;
   touch-action: none;
 }
+.main {
+  overflow-x: hidden;
+}
 .visually-hidden {
   position: absolute;
   overflow: hidden;
