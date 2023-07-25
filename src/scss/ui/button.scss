@@ -69,3 +69,20 @@
     width: 100%;
   }
 }
+
+.btn-element {
+  border: 2px solid var(--current-accent-color, var(--red-middle));
+  color: var(--current-accent-color, var(--red-middle));
+  font-family: "RezakCYR", "sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  transition: color var(--transition), background-color var(--transition);
+
+  @include hover {
+    color: var(--gray-light);
+    background-color: var(--current-accent-color, var(--red-middle));
+  }
+}

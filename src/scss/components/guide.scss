@@ -27,7 +27,7 @@
 
   &__nav-btn {
     font-size: 31px;
-    font-family: "Rezak CYR", sans-serif;
+    font-family: "RezakCYR", sans-serif;
     font-weight: 600;
     line-height: 140%;
     color: var(--gray);
@@ -92,30 +92,6 @@
     color: var(--current-accent-color);
   }
 
-  &__badge {
-    color: var(--current-accent-color);
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: -0.18px;
-    position: relative;
-
-    &:after {
-      content: "";
-      width: 40px;
-      height: 40px;
-      background-color: var(--biege-light);
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(50%, -50%);
-      z-index: -1;
-    }
-  }
-
   &__time {
     margin: 0;
     padding: 0;
@@ -165,22 +141,187 @@
       }
     }
   }
+}
 
-  &__btn {
-    // Такая есть в button.scss но чуть другая
-    border: 2px solid var(--current-accent-color);
-    color: var(--current-accent-color);
-    font-family: "RezakCYR", "sans-serif";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1;
-    text-transform: uppercase;
-    padding: 16px 40px;
-    transition: color var(--transition), background-color var(--transition);
+.guide-modal {
+  &__container {
+    max-width: 1088px;
+    width: auto;
+    padding: 110px 152px 130px 152px;
+    border-radius: 0;
+
+    --current-accent-color: var(--red-middle);
+
+    &--ground {
+      --current-accent-color: var(--green);
+    }
+
+    &--air {
+      --current-accent-color: var(--gray-dark);
+    }
+
+    &--aqua {
+      --current-accent-color: var(--blue-dark);
+    }
+
+    @include desktop {
+      max-width: 888px;
+      padding: 90px 123px 100px 123px;
+    }
+
+    @include laptop {
+      max-width: 690px;
+      padding: 90px 60px 100px 60px;
+    }
+
+    @include tablet {
+      max-width: 90%;
+      padding: 50px 22px 40px 22px;
+    }
+  }
+
+  &__close {
+    right: 40px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.9714 20L5 7.02859L7.02859 5L20 17.9714L32.9714 5L35 7.02859L22.0286 20L35 32.9714L32.9714 35L20 22.0286L7.02859 35L5 32.9714L17.9714 20Z' fill='%23C43A2C'/%3E%3C/svg%3E");
+    transition: opacity var(--transition);
 
     @include hover {
-      color: var(--gray-light);
-      background-color: var(--current-accent-color);
+      opacity: 0.7;
+    }
+
+    @include desktop {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include tablet {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &__content {
+  }
+
+  &__icon {
+    color: var(--current-accent-color);
+    margin-bottom: 32px;
+    width: 92px;
+    height: 82px;
+
+    @include desktop {
+      width: 80px;
+      height: 71px;
+      margin-bottom: 24px;
+    }
+
+    @include tablet {
+      width: 60px;
+      height: 53px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    padding: 0;
+    color: var(--neutral-dark, #2b2523);
+    font-family: "RezakCYR", sans-serif;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @include desktop {
+      font-size: 23px;
+      line-height: 120%;
+    }
+
+    @include laptop {
+    }
+
+    @include tablet {
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @include desktop {
+      margin-bottom: 24px;
+    }
+
+    @include laptop {
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+
+  &__time {
+    color: var(--neutral-dark, #2b2523);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+
+    @include desktop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__badge {
+  }
+
+  &__badge-wraper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__desc {
+    margin: 0 0 60px;
+    padding: 0;
+    color: var(--neutral-dark, #2b2523);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+
+    @include desktop {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__btn {
+    padding: 20px 120px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+
+    @include tablet {
+      padding: 16px 0;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
     }
   }
 }

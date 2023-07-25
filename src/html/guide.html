@@ -27,7 +27,7 @@
                 <p class="guide-tabs__time">
                   <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
                 </p>
-                <span class="guide-tabs__badge">7+</span>
+                <span class="guide-tabs__badge badge">7+</span>
               </div>
             </div>
             <div class="guide-tabs__middle">
@@ -37,7 +37,9 @@
               </p>
               <a href="#" class="guide-tabs__link">Подробнее</a>
             </div>
-            <button class="btn guide-tabs__btn">Купить билет</button>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Купить билет
+            </button>
           </div>
           <div class="guide-tabs__card">
             <svg class="guide-tabs__icon" width="64" height="57">
@@ -49,7 +51,7 @@
                 <p class="guide-tabs__time">
                   <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
                 </p>
-                <span class="guide-tabs__badge">7+</span>
+                <span class="guide-tabs__badge badge">7+</span>
               </div>
             </div>
             <div class="guide-tabs__middle">
@@ -59,7 +61,9 @@
               </p>
               <a href="#" class="guide-tabs__link">Подробнее</a>
             </div>
-            <button class="btn guide-tabs__btn">Купить билет</button>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="fire">
+              Купить билет
+            </button>
           </div>
           <div class="guide-tabs__card guide-tabs__card--ground">
             <svg class="guide-tabs__icon" width="64" height="57">
@@ -71,7 +75,7 @@
                 <p class="guide-tabs__time">
                   <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
                 </p>
-                <span class="guide-tabs__badge">7+</span>
+                <span class="guide-tabs__badge badge">7+</span>
               </div>
             </div>
             <div class="guide-tabs__middle">
@@ -81,7 +85,9 @@
               </p>
               <a href="#" class="guide-tabs__link">Подробнее</a>
             </div>
-            <button class="btn guide-tabs__btn">Купить билет</button>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="ground">
+              Купить билет
+            </button>
           </div>
           <div class="guide-tabs__card guide-tabs__card--air">
             <svg class="guide-tabs__icon" width="64" height="57">
@@ -93,7 +99,7 @@
                 <p class="guide-tabs__time">
                   <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
                 </p>
-                <span class="guide-tabs__badge">7+</span>
+                <span class="guide-tabs__badge badge">7+</span>
               </div>
             </div>
             <div class="guide-tabs__middle">
@@ -103,7 +109,9 @@
               </p>
               <a href="#" class="guide-tabs__link">Подробнее</a>
             </div>
-            <button class="btn guide-tabs__btn">Купить билет</button>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="air">
+              Купить билет
+            </button>
           </div>
           <div class="guide-tabs__card guide-tabs__card--aqua">
             <svg class="guide-tabs__icon" width="64" height="57">
@@ -115,7 +123,7 @@
                 <p class="guide-tabs__time">
                   <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
                 </p>
-                <span class="guide-tabs__badge">7+</span>
+                <span class="guide-tabs__badge badge">7+</span>
               </div>
             </div>
             <div class="guide-tabs__middle">
@@ -125,11 +133,143 @@
               </p>
               <a href="#" class="guide-tabs__link">Подробнее</a>
             </div>
-            <button class="btn guide-tabs__btn">Купить билет</button>
+            <button class="btn btn-element guide-tabs__btn" data-graph-path="aqua">
+              Купить билет
+            </button>
           </div>
         </div>
         <div class="tabs__panel guide-tabs__panel">Два контент</div>
         <div class="tabs__panel guide-tabs__panel">Три контент</div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal guide-modal">
+    <div
+      class="graph-modal__container guide-modal__container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="fire">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--ground"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="ground">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--air"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="air">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--aqua"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="aqua">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content">
+        <svg class="guide-modal__icon" width="92" height="82">
+          <use xlink:href="img/icons/icons.svg#dish"></use>
+        </svg>
+        <h3 class="guide-modal__title">Гончарная мастерская «Живые недра»</h3>
+        <div class="guide-modal__wrapper">
+          <span class="guide-modal__time">
+            <time datetime="2023-19-08T14:45">19 и 20 августа 14:45-19:45</time>
+          </span>
+          <div class="guide-modal__badge-wrapper">
+            <span class="guide-modal__badge badge">7+</span>
+            <span class="guide-modal__badge badge badge--big">30 минут</span>
+          </div>
+        </div>
+        <p class="guide-modal__desc">
+          Посетите гончарную мастерскую «Живые недра»! Здесь вы окунетесь в атмосферу быта викингов,
+          попробовав себя в роли керамиста. Вы пробудите жизнь внутри материи, воплотив в глине
+          ворона Одина – древний символ мудрости и мощи. А еще с помощью гончарного круга вы сможете
+          воссоздать что-то из домашней утвари. После мастер-класса ваши творения останутся
+          подсыхать, и в скором времени вы сможете забрать их домой.
+        </p>
+        <button class="guide-modal__btn btn-element btn">Купить билет</button>
       </div>
     </div>
   </div>

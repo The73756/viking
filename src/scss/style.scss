@@ -7,11 +7,13 @@
 @import "./base/media";
 @import "./base/classes";
 @import "./base/aos";
+@import "./base/modal";
 
 // ui
 @import "./ui/button";
 @import "./ui/list";
 @import "./ui/title";
+@import "./ui/badge";
 
 // mini-components
 @import "./mini-components/body-frame";
