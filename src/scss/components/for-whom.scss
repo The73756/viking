@@ -1,14 +1,19 @@
 .for-whom {
-  padding: 60px 0px 140px 0px;
+  padding: 160px 0 140px 0;
+
   @include desktop {
+    padding-top: 120px;
     padding-bottom: 120px;
   }
+
   @include laptop {
-    padding: 40px 0px 100px 0px;
+    padding: 100px 0 100px 0;
   }
+
   @include tablet {
-    padding: 15px 0px 70px 0px;
+    padding: 90px 0 70px 0;
   }
+
   &__title {
     font-size: 52px;
     line-height: 110%;

@@ -1,8 +1,21 @@
 .camp {
-  background-color: var(--red-middle);
+  background-color: var(--green);
   --webkit-clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 74px, 100% 100%, 0 100%);
   margin-top: 140px;
+  margin-bottom: 160px;
+
+  @include desktop {
+    margin-bottom: 120px;
+  }
+
+  @include laptop {
+    margin-bottom: 100px;
+  }
+
+  @include tablet {
+    margin-bottom: 90px;
+  }
 
   &__container {
     padding-top: 170px;
@@ -184,7 +197,7 @@
 
     @include hover {
       background-color: var(--bg);
-      color: var(--red-middle);
+      color: #000;
     }
 
     @include desktop {
