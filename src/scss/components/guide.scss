@@ -156,6 +156,10 @@
     @include tablet {
       gap: 12px;
     }
+
+    &--top {
+      align-items: flex-start;
+    }
   }
 
   &__card {
@@ -197,7 +201,7 @@
     font-family: "Ubuntu", sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 140%;
 
     @include desktop {
       font-size: 18px;
@@ -444,6 +448,11 @@
       font-size: 16px;
       margin-bottom: 32px;
     }
+  }
+
+  &__add {
+    display: block;
+    margin-top: 10px;
   }
 
   &__btn {
