@@ -12,7 +12,7 @@
     --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     width: 100%;
-    height: calc(753px - (127px + 128px)); // высота - паддинги
+    min-height: calc(753px - (127px + 128px)); // высота - паддинги
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,6 +20,7 @@
     padding: 127px 117px 128px 111px;
     @include desktop {
       padding: 150px 90px 110px 90px;
+      min-height: calc(620px - (150px + 110px));
     }
     @include laptop {
       padding: 90px 35px 70px 35px;
@@ -28,12 +29,14 @@
       position: relative;
       box-sizing: border-box;
       width: 100%;
+      min-height: calc(510px - (90px + 70px));
       clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
       height: auto;
       z-index: 10;
     }
     @include mobile {
       padding: 50px 15px 70px 15px;
+      min-height: calc(440px - (50px + 70px));
     }
   }
 
