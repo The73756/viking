@@ -11,7 +11,7 @@
   &__left {
     --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
-    max-width: 803px;
+    width: 100%;
     background-color: var(--red-middle);
     padding: 127px 117px 128px 111px;
     height: 100%;

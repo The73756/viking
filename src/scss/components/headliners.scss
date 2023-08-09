@@ -21,15 +21,13 @@
     max-width: none;
     @include desktop {
       width: 355px;
-      height: 340px;
+      height: auto;
     }
     @include laptop {
       width: 320px;
-      height: 240px;
     }
     @include mobile {
       width: 200px;
-      height: 160px;
     }
   }
 
