@@ -5,6 +5,7 @@ Swiper.use([Navigation, Autoplay, FreeMode]);
 const sliderOffer = new Swiper(".offer__slider", {
   simulateTouch: false,
   spaceBetween: 30,
+  autoHeight: true,
   navigation: {
     nextEl: ".offer__arrow--next",
     prevEl: ".offer__arrow--prev",

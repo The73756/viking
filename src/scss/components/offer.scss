@@ -12,7 +12,7 @@
     --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     width: 100%;
-    min-height: calc(753px - (127px + 128px)); // высота - паддинги
+    min-height: calc(753px - (127px + 128px));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
