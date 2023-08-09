@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-end;
     position: relative;
-    @include tablet {
+    @include mobile {
       flex-direction: column-reverse;
     }
   }
@@ -11,24 +11,32 @@
   &__left {
     --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
-    max-width: 803px;
+    width: 100%;
+    min-height: calc(753px - (127px + 128px)); // высота - паддинги
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--red-middle);
-    padding: 72px 117px 80px 111px;
-    height: 100%;
+    padding: 127px 117px 128px 111px;
     @include desktop {
-      padding: 90px 90px 110px 90px;
+      padding: 150px 90px 110px 90px;
+      min-height: calc(620px - (150px + 110px));
     }
     @include laptop {
-      padding: 50px 35px 70px 35px;
+      padding: 90px 35px 70px 35px;
     }
     @include tablet {
       position: relative;
       box-sizing: border-box;
       width: 100%;
+      min-height: calc(510px - (90px + 70px));
       clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
-      padding: 40px 15px 70px 15px;
       height: auto;
       z-index: 10;
+    }
+    @include mobile {
+      padding: 50px 15px 70px 15px;
+      min-height: calc(440px - (50px + 70px));
     }
   }
 
@@ -63,6 +71,7 @@
     color: var(--bg);
     margin-bottom: 35px;
     @include desktop {
+      max-width: 450px;
       font-size: 44px;
       margin-bottom: 20px;
     }
@@ -74,6 +83,18 @@
     @include tablet {
       font-size: 29px;
       line-height: 100%;
+    }
+  }
+
+  &__badge {
+    padding: 6px 8px;
+    color: var(--bg);
+    background-color: var(--red-dark);
+
+    &-wrapper {
+      display: flex;
+      margin-bottom: 20px;
+      gap: 8px;
     }
   }
 
@@ -101,7 +122,7 @@
     line-height: 150%;
     color: var(--bg);
     max-width: 529px;
-    margin: 0px 0px 65px 0px;
+    margin: 0px 0px 92px 0px;
     @include desktop {
       max-width: 430px;
       font-size: 14px;
@@ -109,12 +130,11 @@
     }
     @include laptop {
       max-width: 290px;
-      margin-bottom: 30px;
+      margin-bottom: 70px;
     }
     @include tablet {
       max-width: none;
       font-size: 13px;
-      margin-bottom: 40px;
     }
   }
 
@@ -122,33 +142,57 @@
     box-sizing: border-box;
     color: var(--bg);
     border-color: var(--bg);
-    max-width: 300px;
+    max-width: 530px;
     width: 100%;
+
+    span {
+      font-weight: 900;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+
+      @include desktop {
+        margin-bottom: 20px;
+      }
+    }
+
     @include hover {
       color: var(--red-middle);
       background-color: var(--bg);
     }
     @include desktop {
-      max-width: 245px;
+      max-width: 340px;
     }
     @include laptop {
-      max-width: 295px;
+      max-width: 300px;
+    }
+    @include mobile {
+      max-width: 100%;
     }
   }
 
   &__image {
-    max-width: none;
+    width: 505px;
+    max-width: 525px;
+    max-height: 635px;
     display: block;
+    object-fit: cover;
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
     @include desktop {
-      width: 430px;
+      width: 410px;
+      max-height: 520px;
     }
     @include laptop {
       width: 310px;
+      max-height: 450px;
     }
     @include tablet {
       clip-path: none;
       width: 100%;
+    }
+    @include mobile {
+      max-height: 380px;
     }
   }
 
