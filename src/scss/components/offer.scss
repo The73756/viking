@@ -12,9 +12,12 @@
     --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     width: 100%;
+    height: calc(753px - (127px + 128px)); // высота - паддинги
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--red-middle);
     padding: 127px 117px 128px 111px;
-    height: 100%;
     @include desktop {
       padding: 150px 90px 110px 90px;
     }
