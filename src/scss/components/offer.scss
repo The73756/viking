@@ -1,8 +1,13 @@
 .offer {
+  &__slider {
+    display: grid;
+  }
+
   &__slide {
     display: flex;
     align-items: flex-end;
     position: relative;
+    height: 100%;
     @include mobile {
       flex-direction: column-reverse;
     }
@@ -12,32 +17,28 @@
     --webkit-clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 31px, 100% 100%, 0 100%);
     width: 100%;
-    min-height: calc(763px - (127px + 128px));
     display: flex;
+    height: 100%;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--red-middle);
     padding: 127px 117px 128px 111px;
     @include desktop {
       padding: 150px 90px 110px 90px;
-      min-height: calc(640px - (150px + 110px));
     }
     @include laptop {
       padding: 90px 35px 70px 35px;
-      min-height: calc(640px - (150px + 110px));
     }
     @include tablet {
       position: relative;
       box-sizing: border-box;
       width: 100%;
-      min-height: calc(690px - (90px + 70px));
       clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
-      height: auto;
       z-index: 10;
     }
     @include mobile {
       padding: 50px 15px 70px 15px;
-      min-height: calc(590px - (50px + 70px));
     }
   }
 
