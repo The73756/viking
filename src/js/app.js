@@ -12,4 +12,5 @@ flsFunctions.handlerAnchor();
 
 Aos.init();
 new GraphTabs("tab");
+new GraphTabs("tabs");
 new GraphModal();
