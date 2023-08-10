@@ -23,8 +23,6 @@
   &__title {
     margin-bottom: 40px;
     &--second {
-      display: block;
-      margin-top: 24px;
       font-size: 31px;
       line-height: 140%;
       color: var(--red-dark);
@@ -32,7 +30,6 @@
       @include desktop {
         font-size: 23px;
         line-height: 140%;
-        margin-top: 16px;
       }
 
       @include tablet {
@@ -47,6 +44,39 @@
 
     @include tablet {
       margin-bottom: 16px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    gap: 36px;
+
+    @include desktop {
+      gap: 28px;
+    }
+
+    @include laptop {
+      max-width: 100%;
+      margin-bottom: 10px;
+      overflow-x: auto;
+    }
+  }
+
+  &-tabs {
+    &__nav {
+      &-item {
+        .btn {
+          color: var(--brown-dark);
+        }
+      }
+    }
+
+    .tabs__content {
+      .tabs__panel--active {
+        display: block;
+      }
     }
   }
 
@@ -81,6 +111,39 @@
     @include desktop {
       font-size: 18px;
       line-height: 140%;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 36px;
+    color: var(--neutral-brown-dark, #6E443A);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: RezakCYR;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @include desktop {
+      margin-bottom: 32px;
+      font-size: 23px;
+    }
+
+    @include mobile {
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+
+    &--tel {
+      margin-bottom: 60px;
+
+      @include desktop {
+        margin-bottom: 50px;
+      }
+
+      @include mobile {
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -121,6 +184,82 @@
       width: 100%;
     }
   }
+
+  &__price {
+    margin-bottom: 5px;
+
+    &-note {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 26px;
+
+      @include desktop {
+        margin-bottom: 20px;
+        font-size: 23px;
+      }
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__timetable {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    p {
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      @include desktop {
+        gap: 12px;
+      }
+
+      @include mobile {
+        gap: 8px;
+      }
+    }
+
+    .navigate__subtitle {  
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+
+    @include desktop {
+      gap: 36px;
+    }
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__wrapper-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3 {
+      margin: 0;
+    }
+
+    @include laptop {
+      gap: 12px;
+    }
+
+    @include mobile {
+      gap: 8px;
+    }
+  }
+
   &__frame {
     position: absolute;
     font-family: "Runic", sans-serif;

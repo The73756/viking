@@ -11,5 +11,6 @@ flsFunctions.mediaAdaptive();
 flsFunctions.handlerAnchor();
 
 Aos.init();
-new GraphTabs("tab");
+new GraphTabs("guide-tabs");
+new GraphTabs("navigate-tabs");
 new GraphModal();
