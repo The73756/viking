@@ -1,20 +1,12 @@
 .guide {
-  padding-top: 160px;
-  padding-bottom: 160px;
-
-  @include desktop {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+  padding-top: 60px;
 
   @include laptop {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
   }
 
   @include tablet {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 15px;
   }
 
   &__title {
@@ -164,6 +156,10 @@
     @include tablet {
       gap: 12px;
     }
+
+    &--top {
+      align-items: flex-start;
+    }
   }
 
   &__card {
@@ -205,7 +201,7 @@
     font-family: "Ubuntu", sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 140%;
 
     @include desktop {
       font-size: 18px;
@@ -452,6 +448,11 @@
       font-size: 16px;
       margin-bottom: 32px;
     }
+  }
+
+  &__add {
+    display: block;
+    margin-top: 10px;
   }
 
   &__btn {
