@@ -4,6 +4,10 @@ Swiper.use([Navigation, Autoplay, FreeMode]);
 
 const sliderOffer = new Swiper(".offer__slider", {
   simulateTouch: false,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
   spaceBetween: 30,
   navigation: {
     nextEl: ".offer__arrow--next",

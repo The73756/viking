@@ -1,6 +1,13 @@
 <section class="guide">
   <div class="container guide__container section-container">
-    <h2 class="guide__title title section-title" data-aos="fade-right">На фестивале тебя ждёт:</h2>
+    <div class="guide__header">
+      <h2 class="guide__title title section-title" data-aos="fade-right">
+        На фестивале тебя ждёт:
+      </h2>
+      <button data-graph-path="program-modal" class="btn btn-element guide-tabs__btn">
+        программа
+      </button>
+    </div>
     <div class="tabs guide-tabs" data-tabs="guide-tabs" data-aos="fade-up">
       <ul class="tabs__nav guide-tabs__nav list">
         <li class="tabs__nav-item guide-tabs__item">
@@ -1784,6 +1791,18 @@
           </span>
         </p>
         <a href="#" class="guide-modal__btn btn-element btn-element--disabled btn">Бесплатно</a>
+      </div>
+    </div>
+    <div
+      class="graph-modal__container guide-modal__container guide-modal__container--image"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="program-modal">
+      <button
+        class="btn-reset graph-modal__close guide-modal__close guide-modal__close--image js-modal-close"
+        aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content guide-modal__content guide-modal__content--image">
+        <img src="@img/program.png" alt="Программа фестиваля" class="guide-modal__image" />
       </div>
     </div>
   </div>

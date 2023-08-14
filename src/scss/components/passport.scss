@@ -1,0 +1,43 @@
+.passport {
+  padding-bottom: 140px;
+  @include desktop {
+    padding-bottom: 120px;
+  }
+  @include laptop {
+    padding-bottom: 80px;
+  }
+  @include mobile {
+    padding-bottom: 70px;
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    color: var(--bg);
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+
+    @include laptop {
+      font-size: 23px;
+    }
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__btn {
+    line-height: 120%;
+  }
+}
